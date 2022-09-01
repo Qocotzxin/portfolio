@@ -1,6 +1,6 @@
-// Vitest Snapshot v1
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavLogo > Should match snapshot. 1`] = `
+exports[`NavLogo Should match snapshot. 1`] = `
 <div>
   <svg
     aria-labelledby="title"
@@ -34,7 +34,7 @@ exports[`NavLogo > Should match snapshot. 1`] = `
       />
     </lineargradient>
     <circle
-      class="_outterCircle_1ouxi_1"
+      class="outterCircle"
       cx="24"
       cy="24"
       data-testid="NavLogo-outter-circle"
@@ -46,7 +46,7 @@ exports[`NavLogo > Should match snapshot. 1`] = `
       stroke-width="1"
     />
     <circle
-      class="_innerCircle_1ouxi_5"
+      class="innerCircle"
       cx="24"
       cy="24"
       data-testid="NavLogo-inner-circle"
@@ -58,7 +58,7 @@ exports[`NavLogo > Should match snapshot. 1`] = `
       stroke-width="1"
     />
     <text
-      class="_text_1ouxi_9 _textAnimation_1ouxi_16"
+      class="text textAnimation"
       data-testid="NavLogo-text"
       fill="url(#gradient)"
       x="15"
@@ -67,5 +67,9 @@ exports[`NavLogo > Should match snapshot. 1`] = `
       CE
     </text>
   </svg>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
 </div>
 `;

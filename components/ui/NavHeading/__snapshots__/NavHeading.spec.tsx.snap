@@ -1,20 +1,45 @@
-// Vitest Snapshot v1
+// Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavHeading > Should match snapshot. 1`] = `
+exports[`NavHeading Should match snapshot. 1`] = `
+.emotion-0 {
+  font-family: Staatliches;
+  font-weight: var(--chakra-fontWeights-normal);
+  font-size: var(--chakra-fontSizes-xl);
+  line-height: 1.33;
+  position: relative;
+  padding-left: 15px;
+  padding-top: 1px;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-400));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media screen and (min-width: 48em) {
+  .emotion-0 {
+    line-height: 1.2;
+  }
+}
+
 <div>
   <h1
-    class="chakra-heading css-0"
+    class="chakra-heading heading emotion-0"
   >
     <span
-      class="_firstName_1bmv7_9"
+      class="firstName"
     >
       C
     </span>
     <span
-      class="_lastName_1bmv7_1"
+      class="lastName"
     >
       E
     </span>
   </h1>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
 </div>
 `;

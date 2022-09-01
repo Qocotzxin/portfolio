@@ -1,9 +1,9 @@
 import { render } from "@utils/test-utils";
-import Layout from "./Layout";
+import NavBar from "./Navbar";
 
-describe("Layout.", () => {
+describe("NavBar", () => {
   it("Should match snapshot.", () => {
-    const { container } = render(<Layout hygraphData={{}} />);
+    const { container } = render(<NavBar />);
     expect(container).toMatchSnapshot();
   });
 });

@@ -2,8 +2,8 @@ import { gql } from "@apollo/client";
 import type { GetStaticPropsContext, NextPage } from "next";
 import client from "../apollo-client";
 
-const Home: NextPage = () => {
-  return <div>HOME</div>;
+const About: NextPage = () => {
+  return <div>ABOUT</div>;
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
@@ -20,9 +20,6 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
           url
           order
         }
-        skipLinks(locales: ${locale || "en"}) {
-          text
-        }
       }
     `,
   });
@@ -34,4 +31,4 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
   };
 }
 
-export default Home;
+export default About;

@@ -1,0 +1,3 @@
+.link {
+    text-shadow: 0 0 6px var(--chakra-colors-teal-100), 0 0 6px var(--chakra-colors-teal-100), 0px 0 6px var(--chakra-colors-blue-300), 0px 0 6px var(--chakra-colors-blue-300);
+}

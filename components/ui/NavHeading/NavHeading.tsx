@@ -12,7 +12,7 @@ const NavHeading: FC = () => (
     fontSize="xl"
     fontWeight="normal"
     fontFamily="Staatliches"
-    bgGradient="linear(to-r, teal.300, blue.400)"
+    bgGradient="linear(to-r, teal.300, blue.300)"
     bgClip="text"
     className={styles.heading}
   >

@@ -11,6 +11,15 @@
       "@styles/*": [
         "styles/*"
       ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@model/*": [
+        "model/*"
+      ],
+      "@context/*": [
+        "context/*"
+      ],
       "@theme": [
         "theme"
       ]
@@ -37,7 +46,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "jest.config.js",
+    "./jest-setup.ts"
   ],
   "exclude": [
     "node_modules"

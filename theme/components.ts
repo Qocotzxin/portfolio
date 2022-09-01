@@ -8,21 +8,29 @@ const components: Record<string, ComponentStyleConfig> = {
       },
     },
     variants: {
-      body: {
+      base: {
+        position: "relative",
+        _before: {
+          content: '""',
+          position: "absolute",
+          display: "block",
+          width: "100%",
+          height: "2px",
+          bottom: 0,
+          left: 0,
+          backgroundColor: "gray.800",
+          transform: "scaleX(0)",
+          transition: "transform 0.3s ease",
+        },
         _hover: {
-          _after: {
-            content: '""',
-            width: "100%",
-            height: "1px",
-            color: "white",
-            backgroundColor: "white",
+          _before: {
+            transform: "scaleX(1)",
           },
         },
         _dark: {
-          // boxShadow: "inset 0 0 0 0 var(--chakra-colors-gray-800)",
-          // _hover: {
-          //   boxShadow: "inset 200px 0 0 0 var(--chakra-colors-gray-50)",
-          // },
+          _before: {
+            backgroundColor: "gray.50",
+          },
         },
       },
     },

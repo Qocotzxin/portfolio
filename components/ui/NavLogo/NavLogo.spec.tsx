@@ -1,5 +1,5 @@
 import NavLogo from "./NavLogo";
-import { render, screen } from "@testing-library/react";
+import { render, screen } from "@utils/test-utils";
 
 describe("NavLogo", () => {
   it("Should match snapshot.", () => {
@@ -11,31 +11,29 @@ describe("NavLogo", () => {
     render(<NavLogo withAnimation />);
 
     expect(screen.getByTestId("NavLogo-outter-circle")).toHaveClass(
-      "_outterCircle_1ouxi_1"
+      "outterCircle"
     );
 
     expect(screen.getByTestId("NavLogo-inner-circle")).toHaveClass(
-      "_innerCircle_1ouxi_5"
+      "innerCircle"
     );
 
-    expect(screen.getByTestId("NavLogo-text")).toHaveClass(
-      "_textAnimation_1ouxi_16"
-    );
+    expect(screen.getByTestId("NavLogo-text")).toHaveClass("textAnimation");
   });
 
   it("Should NOT have animation related classes when withAnimation is false or undefined.", () => {
     render(<NavLogo />);
 
     expect(screen.queryByTestId("NavLogo-outter-circle")).not.toHaveClass(
-      "_outterCircle_1ouxi_1"
+      "outterCircle"
     );
 
     expect(screen.queryByTestId("NavLogo-inner-circle")).not.toHaveClass(
-      "_innerCircle_1ouxi_5"
+      "innerCircle"
     );
 
     expect(screen.queryByTestId("NavLogo-text")).not.toHaveClass(
-      "_textAnimation_1ouxi_16"
+      "textAnimation"
     );
   });
 });

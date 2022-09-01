@@ -1,14 +1,5 @@
-import { act, render, screen } from "@testing-library/react";
-import { vi } from "vitest";
 import NavHeading from "./NavHeading";
-
-beforeAll(() => {
-  vi.useFakeTimers();
-});
-
-afterAll(() => {
-  vi.useRealTimers();
-});
+import { render, screen } from "@utils/test-utils";
 
 describe("NavHeading", () => {
   it("Should match snapshot.", () => {

@@ -2,7 +2,7 @@
     transform: translateX(8px);
     display: inline-block;
     background-clip: text;
-    background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-400));
+    background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-300));
     animation: move-to-r 1s linear;
 }
 
@@ -18,7 +18,7 @@
 .firstName::after,
 .lastName::after {
     background-clip: text;
-    background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-400));
+    background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-300));
     animation: fade-in 2s ease-in;
 }
 

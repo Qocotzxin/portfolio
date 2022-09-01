@@ -1,15 +1,22 @@
+import { Box } from "@chakra-ui/react";
 import Navbar from "@ui/Navbar";
+import { HygraphProvider } from "@context/hygraphContext";
 import Head from "next/head";
 import { FC, PropsWithChildren } from "react";
-import { Box, ColorModeScript } from "@chakra-ui/react";
+import { HygraphData } from "@model/hygraph";
 
-const Home: FC<PropsWithChildren> = ({ children }) => {
+interface LayoutProps {
+  hygraphData: Partial<HygraphData>;
+}
+
+const Layout: FC<PropsWithChildren & LayoutProps> = ({
+  children,
+  hygraphData,
+}) => {
   return (
     <Box
       w="100vw"
       h="100vh"
-      bg="gray.50"
-      _dark={{ bg: "gray.800" }}
       className="w-screen h-screen bg-slate-50 dark:bg-gray-900"
     >
       <Head>
@@ -19,13 +26,17 @@ const Home: FC<PropsWithChildren> = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <HygraphProvider hygraphData={hygraphData || {}}>
+        <header>
+          <Navbar />
+        </header>
 
-      <main>{children}</main>
+        <main id="main">{children}</main>
 
-      <footer></footer>
+        <footer></footer>
+      </HygraphProvider>
     </Box>
   );
 };
 
-export default Home;
+export default Layout;
