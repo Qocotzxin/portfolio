@@ -11,9 +11,9 @@ const NotFound: NextPage = () => {
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   let response;
   try {
-    console.log("URL!!!!!", getHygraphUrl(locale));
     response = await axios.get<ApiResponse<HygraphData>>(getHygraphUrl(locale));
   } catch (e: unknown) {
+    console.log("ERROR!!!!", e);
     // Call logging service.
   }
 
