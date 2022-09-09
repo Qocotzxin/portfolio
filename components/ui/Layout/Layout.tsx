@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import { HygraphModel } from "@models/hygraph";
-import Navbar from "@ui/NavBar";
+import NavBar from "@ui/NavBar";
 import { HygraphProvider } from "contexts/hygraphContext";
 import Head from "next/head";
 import { FC, PropsWithChildren } from "react";
@@ -25,7 +25,7 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
 
       <HygraphProvider hygraphData={hygraphData}>
         <header>
-          <Navbar />
+          <NavBar />
         </header>
 
         <main id="main">{children}</main>
