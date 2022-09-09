@@ -25,7 +25,7 @@ describe("Home", () => {
 
   // Duplicated getStaticProps tests on other pages need refactor.
   it("Should call hygraph endpoint with the correct parameters and return the result when executing getStaticProps.", async () => {
-    process.env.NEXT_PUBLIC_VERCEL_URL = "https://test-api";
+    process.env.VERCEL_URL = "https://test-api";
     const result = await getStaticProps({ locale: "en" });
     expect(axios.get).toHaveBeenCalledWith(
       "https://test-api/api/hygraph?locale=en"
