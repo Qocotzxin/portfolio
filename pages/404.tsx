@@ -12,8 +12,8 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
   let response;
   try {
     response = await axios.get<ApiResponse<HygraphData>>(getHygraphUrl(locale));
+    console.log("RESPONSE!!!!", response);
   } catch (e: unknown) {
-    console.log("ERROR!!!!", e);
     // Call logging service.
   }
 
