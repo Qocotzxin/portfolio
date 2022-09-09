@@ -10,11 +10,14 @@ const NotFound: NextPage = () => {
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   let response;
   try {
-    response = await axios.get<ApiResponse<HygraphData>>(
+    console.log(
+      "URL!!!!",
       `${process.env.VERCEL_URL}/api/hygraph?locale=${locale}`
     );
 
-    console.log("RESPONSEEEEE", response);
+    response = await axios.get<ApiResponse<HygraphData>>(
+      `${process.env.VERCEL_URL}/api/hygraph?locale=${locale}`
+    );
   } catch (e: unknown) {
     console.log("ERROR!!!", e);
 
