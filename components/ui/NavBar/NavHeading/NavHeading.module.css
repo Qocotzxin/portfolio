@@ -1,0 +1,43 @@
+.lastName {
+    transform: translateX(8px);
+    display: inline-block;
+    background-clip: text;
+    background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-300));
+    animation: move-to-r 1s linear;
+}
+
+.firstName::after {
+    content: 'ristian';
+
+}
+
+.lastName::after {
+    content: 'tchebarne';
+}
+
+.firstName::after,
+.lastName::after {
+    background-clip: text;
+    background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-300));
+    animation: fade-in 2s ease-in;
+}
+
+@keyframes move-to-r {
+    from {
+        transform: translateX(-52px);
+    }
+
+    to {
+        transform: translateX(8px);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
