@@ -3,7 +3,7 @@ import { render, screen } from "@utils/test-utils";
 import axios from "axios";
 
 jest.mock("axios", () => ({
-  get: jest.fn(() => ({ data: { test: "test" } })),
+  get: jest.fn(() => ({ data: { data: { test: "test" } } })),
 }));
 
 const ORIGINAL_ENV_VARS = process.env;
@@ -24,8 +24,8 @@ describe("Home", () => {
   });
 
   // Duplicated getStaticProps tests on other pages need refactor.
-  it("Should call hygraph endpoint with the correct parameters adn return the result when executing getStaticProps.", async () => {
-    process.env.ORIGIN_URL = "https://test-api";
+  it("Should call hygraph endpoint with the correct parameters and return the result when executing getStaticProps.", async () => {
+    process.env.NEXT_PUBLIC_VERCEL_URL = "https://test-api";
     const result = await getStaticProps({ locale: "en" });
     expect(axios.get).toHaveBeenCalledWith(
       "https://test-api/api/hygraph?locale=en"
@@ -46,7 +46,7 @@ describe("Home", () => {
     const result = await getStaticProps({ locale: "en" });
     expect(result).toEqual({
       props: {
-        hygraphData: null,
+        hygraphData: undefined,
       },
     });
   });

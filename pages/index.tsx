@@ -8,18 +8,20 @@ const Home: NextPage = () => {
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
-  let data;
+  let response;
   try {
-    data = await axios.get<ApiResponse<HygraphData>>(
-      `${process.env.ORIGIN_URL}/api/hygraph?locale=${locale}`
+    response = await axios.get<ApiResponse<HygraphData>>(
+      `${process.env.NEXT_PUBLIC_VERCEL_URL}/api/hygraph?locale=${locale}`
     );
   } catch (e: unknown) {
     // Call logging service.
   }
 
+  const data = response ? response.data : null;
+
   return {
     props: {
-      hygraphData: data ? data.data : null,
+      hygraphData: data?.data,
     },
   };
 }
