@@ -1,32 +1,25 @@
-import { gql } from "@apollo/client";
+import { ApiResponse } from "@models/api";
+import { HygraphData } from "@models/hygraph";
+import axios from "axios";
 import type { GetStaticPropsContext, NextPage } from "next";
-import client from "../apollo-client";
 
 const About: NextPage = () => {
-  return <div>ABOUT</div>;
+  return <div data-testid="About">ABOUT</div>;
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
-  const { data } = await client.query({
-    query: gql`
-      query HygraphData {
-        ariaLabels(locales: ${locale || "en"}) {
-          component
-          content
-          metadata
-        }
-        navLinks(locales: ${locale || "en"}) {
-          text
-          url
-          order
-        }
-      }
-    `,
-  });
+  let data;
+  try {
+    data = await axios.get<ApiResponse<HygraphData>>(
+      `${process.env.ORIGIN_URL}/api/hygraph?locale=${locale}`
+    );
+  } catch (e: unknown) {
+    // Call logging service.
+  }
 
   return {
     props: {
-      hygraphData: data,
+      hygraphData: data ? data.data : null,
     },
   };
 }

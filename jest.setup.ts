@@ -1,5 +1,24 @@
 import "@testing-library/jest-dom/extend-expect";
 
+jest.mock("next/router", () => ({
+  useRouter() {
+    return {
+      pathname: "/",
+    };
+  },
+}));
+
+jest.mock("graphql-request", () => {
+  const actual = jest.requireActual("graphql-request");
+  return {
+    ...actual,
+    GraphQLClient: jest.fn(() => ({
+      request: jest.fn(() => ({ test: "test" })),
+    })),
+    gql: jest.fn((query) => query),
+  };
+});
+
 Object.defineProperty(window, "matchMedia", {
   writable: true,
   value: jest.fn().mockImplementation((query) => ({

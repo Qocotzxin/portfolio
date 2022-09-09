@@ -14,11 +14,23 @@
       "@utils/*": [
         "utils/*"
       ],
-      "@model/*": [
-        "model/*"
+      "@models/*": [
+        "models/*"
       ],
-      "@context/*": [
-        "context/*"
+      "@contexts/*": [
+        "contexts/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@api/*": [
+        "pages/api/*"
       ],
       "@theme": [
         "theme"

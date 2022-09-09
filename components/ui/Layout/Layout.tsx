@@ -1,15 +1,11 @@
 import { Box } from "@chakra-ui/react";
-import Navbar from "@ui/Navbar";
-import { HygraphProvider } from "@context/hygraphContext";
+import { HygraphModel } from "@models/hygraph";
+import Navbar from "@ui/NavBar";
+import { HygraphProvider } from "contexts/hygraphContext";
 import Head from "next/head";
 import { FC, PropsWithChildren } from "react";
-import { HygraphData } from "@model/hygraph";
 
-interface LayoutProps {
-  hygraphData: Partial<HygraphData>;
-}
-
-const Layout: FC<PropsWithChildren & LayoutProps> = ({
+const Layout: FC<PropsWithChildren & HygraphModel> = ({
   children,
   hygraphData,
 }) => {
@@ -18,6 +14,7 @@ const Layout: FC<PropsWithChildren & LayoutProps> = ({
       w="100vw"
       h="100vh"
       className="w-screen h-screen bg-slate-50 dark:bg-gray-900"
+      data-testid="Layout"
     >
       <Head>
         <title>Cristian Etchebarne</title>
@@ -26,7 +23,7 @@ const Layout: FC<PropsWithChildren & LayoutProps> = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HygraphProvider hygraphData={hygraphData || {}}>
+      <HygraphProvider hygraphData={hygraphData}>
         <header>
           <Navbar />
         </header>

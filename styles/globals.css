@@ -5,22 +5,121 @@ body {
 }
 
 @font-face {
-    font-family: "AlumniSansPinstripe";
-    src: url('../public/fonts/AlumniSansPinstripe-Regular.ttf');
-    font-weight: normal;
+    font-family: "Oswald";
+    src: url('../public/fonts/Oswald-ExtraLight.ttf');
+    font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "AlumniSansPinstripe";
-    src: url('../public/fonts/AlumniSansPinstripe-Italic.ttf');
-    font-weight: normal;
+    font-family: "Oswald";
+    src: url('../public/fonts/Oswald-Light.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('../public/fonts/Oswald-Regular.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('../public/fonts/Oswald-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('../public/fonts/Oswald-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('../public/fonts/Oswald-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-ThinItalic.ttf');
+    font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Staatliches";
-    src: url('../public/fonts/Staatliches-Regular.ttf');
-    font-weight: normal;
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-Light.ttf');
+    font-weight: 200;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-LightItalic.ttf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-Regular.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-Medium.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-MediumItalic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../public/fonts/Roboto-BlackItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
 }

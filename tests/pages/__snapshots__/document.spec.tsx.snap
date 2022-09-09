@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_document Should match snapshot. 1`] = `
+<div>
+  <div>
+    <span>
+      Html
+    </span>
+    <div>
+      Head
+    </div>
+    <body>
+      <div>
+        <span>
+          ColorModeScript
+        </span>
+      </div>
+      <div>
+        Main
+      </div>
+      <div>
+        NextScript
+      </div>
+    </body>
+  </div>
+</div>
+`;

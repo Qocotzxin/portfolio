@@ -1,6 +1,6 @@
 const fonts = {
-  body: "AlumniSansPinstripe, sans-serif",
-  heading: "Staatliches, serif",
+  body: "Roboto, sans-serif",
+  heading: "Oswald, serif",
   mono: "Menlo, monospace",
 };
 

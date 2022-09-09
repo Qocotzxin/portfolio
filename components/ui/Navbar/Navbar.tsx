@@ -1,19 +1,13 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  Link,
-  Show,
-  VisuallyHidden,
-} from "@chakra-ui/react";
-import ColorModeSwitcher from "@ui/ColorModeSwitcher";
-import NavHeading from "@ui/NavHeading";
-import NavLinks from "@ui/NavLinks";
-import NavLogo from "@ui/NavLogo";
+import { Box, Flex, HStack, Link, Show } from "@chakra-ui/react";
+import ColorModeSwitcher from "./ColorModeSwitcher";
+import NavHeading from "./NavHeading";
+import NavLinks from "./NavLinks";
+import NavLogo from "./NavLogo";
+import SkipLink from "./SkipLink";
 import NextLink from "next/link";
 import { FC } from "react";
 
-const Navbar: FC = () => (
+const NavBar: FC = () => (
   <Flex
     as="nav"
     w="100%"
@@ -44,7 +38,9 @@ const Navbar: FC = () => (
         </NextLink>
       </HStack>
 
-      <HStack spacing={4} fontSize="2xl" fontWeight="bold">
+      <SkipLink />
+
+      <HStack spacing={4}>
         <NavLinks />
         <ColorModeSwitcher />
       </HStack>
@@ -52,4 +48,4 @@ const Navbar: FC = () => (
   </Flex>
 );
 
-export default Navbar;
+export default NavBar;

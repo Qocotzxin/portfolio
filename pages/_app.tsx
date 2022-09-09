@@ -1,10 +1,14 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import { HygraphModel } from "@models/hygraph";
+import "@styles/globals.css";
 import theme from "@theme";
 import Layout from "@ui/Layout";
 import type { AppProps } from "next/app";
-import "@styles/globals.css";
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({
+  Component,
+  pageProps,
+}: AppProps<HygraphModel>): JSX.Element {
   return (
     <ChakraProvider theme={theme}>
       <Layout hygraphData={pageProps.hygraphData}>
@@ -13,5 +17,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   );
 }
-
-export default MyApp;

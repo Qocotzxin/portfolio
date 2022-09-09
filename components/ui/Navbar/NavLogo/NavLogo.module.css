@@ -1,0 +1,40 @@
+.outterCircle {
+    animation: dash-forward 1s linear forwards;
+}
+
+.innerCircle {
+    animation: dash-backward 1.2s linear forwards;
+}
+
+.text {
+    opacity: 1;
+    font-size: 1.25rem;
+    font-family: Oswald, serif;
+    text-transform: uppercase;
+}
+
+.textAnimation {
+    animation: fade-in 1.2s ease-in;
+}
+
+@keyframes dash-forward {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash-backward {
+    to {
+        stroke-dashoffset: 280;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
