@@ -24,7 +24,7 @@ describe("About", () => {
   });
 
   it("Should call hygraph endpoint with the correct parameters and return the result when executing getStaticProps.", async () => {
-    process.env.VERCEL_URL = "https://test-api";
+    process.env.VERCEL_URL = "test-api";
     const result = await getStaticProps({ locale: "en" });
     expect(axios.get).toHaveBeenCalledWith(
       "https://test-api/api/hygraph?locale=en"
