@@ -37,6 +37,8 @@ export default async function handler(
     }
     `);
 
+    console.log("DATA FROM HYGRAPH!!!!", data);
+
     return res.status(200).json({
       ok: true,
       data,
