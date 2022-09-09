@@ -8,13 +8,16 @@ const NotFound: NextPage = () => {
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
-  console.log("VERCEL URL!!!", process.env.VERCEL_URL);
   let response;
   try {
     response = await axios.get<ApiResponse<HygraphData>>(
       `${process.env.VERCEL_URL}/api/hygraph?locale=${locale}`
     );
+
+    console.log("RESPONSEEEEE", response);
   } catch (e: unknown) {
+    console.log("ERROR!!!", e);
+
     // Call logging service.
   }
 
