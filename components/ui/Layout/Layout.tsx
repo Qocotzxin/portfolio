@@ -19,7 +19,9 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
       <Head>
         <title>Cristian Etchebarne</title>
         <meta charSet="utf-8" />
-        <meta name="description" content="Cristian Etchebarne resume" />
+        {hygraphData.metaTags?.map((mt, index) => (
+          <meta key={index} name={mt.name} content={mt.content} />
+        ))}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

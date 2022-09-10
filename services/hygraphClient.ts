@@ -28,6 +28,10 @@ export class HygraphClient {
       skipLinks(locales: ${defaultLocale}) {
         text
       }
+      metaTags(locales: ${defaultLocale}) {
+        name
+        content
+      }
     }
     `);
 
