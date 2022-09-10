@@ -1,12 +1,38 @@
-import { GraphQLClient } from "graphql-request";
+import { HygraphData } from "@models/hygraph";
+import { gql, GraphQLClient } from "graphql-request";
 
-export const createInstance = () =>
-  new GraphQLClient(process.env.HYGRAPH_API!, {
-    headers: {
-      Authorization: `Bearer ${process.env.HYGRAPH_AUTH_TOKEN}`,
-    },
-  });
+export class HygraphClient {
+  client: GraphQLClient;
 
-const client = createInstance();
+  constructor() {
+    this.client = new GraphQLClient(process.env.HYGRAPH_API!, {
+      headers: {
+        Authorization: `Bearer ${process.env.HYGRAPH_AUTH_TOKEN}`,
+      },
+    });
+  }
 
-export default client;
+  async getData(locale?: string) {
+    const defaultLocale = locale || "en";
+    const data = await this.client.request<HygraphData>(gql`{
+      ariaLabels(locales: ${defaultLocale}) {
+        component
+        content
+        metadata
+      }
+      navLinks(locales: ${defaultLocale}) {
+        text
+        url
+        order
+      }
+      skipLinks(locales: ${defaultLocale}) {
+        text
+      }
+    }
+    `);
+
+    return data;
+  }
+}
+
+export default new HygraphClient();
