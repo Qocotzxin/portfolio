@@ -1,11 +1,9 @@
 import "@testing-library/jest-dom/extend-expect";
 
 jest.mock("next/router", () => ({
-  useRouter() {
-    return {
-      pathname: "/",
-    };
-  },
+  useRouter: jest.fn(() => ({
+    pathname: "/",
+  })),
 }));
 
 jest.mock("graphql-request", () => {

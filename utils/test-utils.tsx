@@ -32,6 +32,11 @@ export const hygraphMockData: Partial<HygraphData> = {
       text: "Test",
     },
   ],
+  languages: [
+    { code: "en", displayName: "english", isActive: true },
+    { code: "es", displayName: "spanish", isActive: true },
+    { code: "nl", displayName: "dutch", isActive: false },
+  ],
 };
 
 interface AllTheProvidersProps {

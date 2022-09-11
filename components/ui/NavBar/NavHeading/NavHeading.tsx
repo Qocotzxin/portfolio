@@ -6,7 +6,6 @@ const NavHeading: FC = () => (
   <Heading
     as="h1"
     position="relative"
-    pl="15px"
     pt="1px"
     w="100%"
     fontSize="xl"

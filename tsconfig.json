@@ -34,6 +34,9 @@
       ],
       "@theme": [
         "theme"
+      ],
+      "@icons": [
+        "components/icons"
       ]
     },
     "target": "es5",

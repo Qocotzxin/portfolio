@@ -1,8 +1,8 @@
 import { Box, Icon, useColorMode } from "@chakra-ui/react";
 import { useAriaLabel } from "@hooks/useAriaLabel";
+import { Clouds, Stars } from "@icons";
 import { Components } from "@models/hygraph";
 import { FC, useEffect, useState } from "react";
-import { BsFillCloudsFill, BsStars } from "react-icons/bs";
 import styles from "./ColorModeSwitcher.module.css";
 
 const ColorModeSwitcher: FC = () => {
@@ -24,7 +24,6 @@ const ColorModeSwitcher: FC = () => {
 
   return (
     <Box
-      order="100"
       as="button"
       w="64px"
       h="32px"
@@ -63,7 +62,7 @@ const ColorModeSwitcher: FC = () => {
       <Icon
         h="16px"
         w="16px"
-        as={BsStars}
+        as={Stars}
         position="absolute"
         right="8px"
         top="7px"
@@ -81,7 +80,7 @@ const ColorModeSwitcher: FC = () => {
         left="8px"
         top="7px"
         color="white"
-        as={BsFillCloudsFill}
+        as={Clouds}
         opacity={isDark ? 0 : 1}
         transition="opacity 0.4s"
         zIndex="4"

@@ -11,16 +11,15 @@ exports[`_app Should match snapshot. 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   height: var(--chakra-sizes-16);
-  -webkit-padding-start: var(--chakra-space-12);
-  padding-inline-start: var(--chakra-space-12);
-  -webkit-padding-end: var(--chakra-space-12);
-  padding-inline-end: var(--chakra-space-12);
+  -webkit-padding-start: var(--chakra-space-8);
+  padding-inline-start: var(--chakra-space-8);
+  -webkit-padding-end: var(--chakra-space-8);
+  padding-inline-end: var(--chakra-space-8);
   padding-top: var(--chakra-space-2);
   padding-bottom: var(--chakra-space-2);
   background: var(--chakra-colors-transparent);
@@ -35,28 +34,12 @@ exports[`_app Should match snapshot. 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  max-width: 80em;
-  width: 100%;
-}
-
-.emotion-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.emotion-3>*:not(style)~*:not(style) {
+.emotion-2>*:not(style)~*:not(style) {
   margin-top: 0px;
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
@@ -65,7 +48,7 @@ exports[`_app Should match snapshot. 1`] = `
   margin-inline-start: var(--chakra-space-2);
 }
 
-.emotion-4 {
+.emotion-3 {
   transition-property: var(--chakra-transition-property-common);
   transition-duration: var(--chakra-transition-duration-fast);
   transition-timing-function: var(--chakra-transition-easing-ease-out);
@@ -79,18 +62,18 @@ exports[`_app Should match snapshot. 1`] = `
   transition: text-shadow 0.2s linear,color 0.2s linear;
 }
 
-.emotion-4:hover,
-.emotion-4[data-hover] {
+.emotion-3:hover,
+.emotion-3[data-hover] {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4:focus-visible,
-.emotion-4[data-focus-visible] {
+.emotion-3:focus-visible,
+.emotion-3[data-focus-visible] {
   box-shadow: var(--chakra-shadows-outline);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -104,7 +87,7 @@ exports[`_app Should match snapshot. 1`] = `
   flex-direction: row;
 }
 
-.emotion-5>*:not(style)~*:not(style) {
+.emotion-4>*:not(style)~*:not(style) {
   margin-top: 0px;
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
@@ -113,10 +96,7 @@ exports[`_app Should match snapshot. 1`] = `
   margin-inline-start: var(--chakra-space-4);
 }
 
-.emotion-6 {
-  -webkit-order: 100;
-  -ms-flex-order: 100;
-  order: 100;
+.emotion-5 {
   width: 64px;
   height: 32px;
   background: var(--chakra-colors-blue-700);
@@ -124,13 +104,13 @@ exports[`_app Should match snapshot. 1`] = `
   position: relative;
 }
 
-.chakra-ui-dark .emotion-6:not([data-theme]),
-[data-theme=dark] .emotion-6:not([data-theme]),
-.emotion-6[data-theme=dark] {
+.chakra-ui-dark .emotion-5:not([data-theme]),
+[data-theme=dark] .emotion-5:not([data-theme]),
+.emotion-5[data-theme=dark] {
   border-color: var(--chakra-colors-gray-50);
 }
 
-.emotion-7 {
+.emotion-6 {
   border-radius: 50%;
   background: var(--chakra-colors-blue-700);
   width: 18px;
@@ -141,7 +121,7 @@ exports[`_app Should match snapshot. 1`] = `
   z-index: 3;
 }
 
-.emotion-8 {
+.emotion-7 {
   border-radius: 50%;
   background: var(--chakra-colors-yellow-400);
   width: 18px;
@@ -158,7 +138,15 @@ exports[`_app Should match snapshot. 1`] = `
   z-index: 2;
 }
 
-.emotion-9 {
+.emotion-8 {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -176,7 +164,15 @@ exports[`_app Should match snapshot. 1`] = `
   z-index: 1;
 }
 
-.emotion-10 {
+.emotion-9 {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -194,6 +190,161 @@ exports[`_app Should match snapshot. 1`] = `
   z-index: 4;
 }
 
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  -webkit-padding-start: var(--chakra-space-8);
+  padding-inline-start: var(--chakra-space-8);
+  -webkit-padding-end: var(--chakra-space-8);
+  padding-inline-end: var(--chakra-space-8);
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  border-top: 1px solid var(--chakra-colors-gray-100);
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-11>*:not(style)~*:not(style) {
+  margin-top: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-start: 0.5rem;
+  margin-inline-start: 0.5rem;
+}
+
+.emotion-14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: var(--chakra-radii-md);
+  font-weight: var(--chakra-fontWeights-semibold);
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-8);
+  min-width: var(--chakra-sizes-8);
+  font-size: var(--chakra-fontSizes-sm);
+  -webkit-padding-start: var(--chakra-space-3);
+  padding-inline-start: var(--chakra-space-3);
+  -webkit-padding-end: var(--chakra-space-3);
+  padding-inline-end: var(--chakra-space-3);
+  color: var(--chakra-colors-blue-200);
+  background: var(--chakra-colors-transparent);
+  padding: 0px;
+}
+
+.emotion-14:focus-visible,
+.emotion-14[data-focus-visible] {
+  box-shadow: var(--chakra-shadows-outline);
+}
+
+.emotion-14[disabled],
+.emotion-14[aria-disabled=true],
+.emotion-14[data-disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: var(--chakra-shadows-none);
+}
+
+.emotion-14:hover,
+.emotion-14[data-hover] {
+  background: rgba(144, 205, 244, 0.12);
+}
+
+.emotion-14:hover[disabled],
+.emotion-14[data-hover][disabled],
+.emotion-14:hover[aria-disabled=true],
+.emotion-14[data-hover][aria-disabled=true],
+.emotion-14:hover[data-disabled],
+.emotion-14[data-hover][data-disabled] {
+  background: initial;
+}
+
+.emotion-14:active,
+.emotion-14[data-active] {
+  background: rgba(144, 205, 244, 0.24);
+}
+
+.emotion-15 {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.emotion-16 {
+  z-index: 1;
+}
+
+.emotion-17 {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background: var(--chakra-colors-gray-700);
+  box-shadow: var(--chakra-shadows-dark-lg);
+  color: inherit;
+  min-width: var(--chakra-sizes-3xs);
+  padding-top: var(--chakra-space-2);
+  padding-bottom: var(--chakra-space-2);
+  z-index: 1;
+  border-radius: var(--chakra-radii-md);
+  border-width: 1px;
+  -webkit-padding-start: var(--chakra-space-4);
+  padding-inline-start: var(--chakra-space-4);
+  -webkit-padding-end: var(--chakra-space-4);
+  padding-inline-end: var(--chakra-space-4);
+}
+
 <div>
   <div
     class="w-screen h-screen bg-slate-50 dark:bg-gray-900 emotion-0"
@@ -204,63 +355,59 @@ exports[`_app Should match snapshot. 1`] = `
         class="emotion-1"
       >
         <div
-          class="emotion-2"
+          class="chakra-stack emotion-2"
         >
-          <div
-            class="chakra-stack emotion-3"
+          <a
+            class="chakra-link emotion-3"
+            href="/"
+          />
+        </div>
+        <div
+          class="chakra-stack emotion-4"
+        >
+          <button
+            class="emotion-5"
           >
-            <a
-              class="chakra-link emotion-4"
-              href="/"
-            />
-          </div>
-          <div
-            class="chakra-stack emotion-5"
-          >
-            <button
+            <div
               class="emotion-6"
+            />
+            <div
+              class="emotion-7"
+            />
+            <svg
+              class="chakra-icon chakra-icon stars emotion-8"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                class="emotion-7"
+              <path
+                d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"
               />
-              <div
-                class="emotion-8"
+            </svg>
+            <svg
+              class="chakra-icon chakra-icon cloud emotion-9"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5z"
               />
-              <svg
-                class="chakra-icon stars emotion-9"
-                fill="currentColor"
-                focusable="false"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"
-                />
-              </svg>
-              <svg
-                class="chakra-icon cloud emotion-10"
-                fill="currentColor"
-                focusable="false"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5z"
-                />
-                <path
-                  d="M14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.769z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.769z"
+              />
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
@@ -271,7 +418,67 @@ exports[`_app Should match snapshot. 1`] = `
         Test component
       </div>
     </main>
-    <footer />
+    <footer>
+      <div
+        class="emotion-10"
+      >
+        <div
+          class="chakra-stack emotion-11"
+        />
+        <div
+          class="chakra-stack emotion-11"
+        >
+          <div
+            class="emotion-13"
+            data-testid="LanguageSelector"
+          >
+            <button
+              aria-controls="menu-list-:r1:"
+              aria-expanded="false"
+              aria-haspopup="menu"
+              class="chakra-button chakra-menu__menu-button emotion-14"
+              data-testid="FloatingMenu-button"
+              id="menu-button-:r1:"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="chakra-icon emotion-15"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 015.08 16zm2.95-8H5.08a7.987 7.987 0 014.33-3.56A15.65 15.65 0 008.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"
+                />
+              </svg>
+            </button>
+            <div
+              class="emotion-16"
+              style="visibility: hidden; position: absolute; min-width: max-content; inset: 0 auto auto 0;"
+            >
+              <div
+                aria-orientation="vertical"
+                class="chakra-menu__menu-list emotion-17"
+                id="menu-list-:r1:"
+                role="menu"
+                style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"
+                tabindex="-1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
   <span
     hidden=""

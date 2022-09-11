@@ -32,6 +32,11 @@ export class HygraphClient {
         name
         content
       }
+      languages(locales: ${defaultLocale}) {
+        code
+        displayName
+        isActive
+      }
     }
     `);
 

@@ -1,9 +1,9 @@
 import { Menu, MenuButton, MenuList } from "@chakra-ui/react";
-import { fireEvent, render, screen, waitFor } from "@utils/test-utils";
-import BaseLink from "@ui/NavBar/NavLinks/BaseLink";
+import BaseLink from "@ui/BaseLink";
+import { fireEvent, render, screen } from "@utils/test-utils";
 
 const mockProps = {
-  activeRoute: "/test",
+  activeRoute: "test",
   link: { url: "test", order: 1, text: "Test link" },
   isMenuItem: false,
 };

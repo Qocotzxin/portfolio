@@ -13,6 +13,7 @@ export interface HygraphData {
   navLinks: NavLink[];
   jobs: Job[];
   skipLinks: SkipLink[];
+  languages: Language[];
 }
 
 // Models
@@ -50,10 +51,17 @@ export interface SkipLink {
   text: string;
 }
 
+export interface Language {
+  code: string;
+  displayName: string;
+  isActive: boolean;
+}
+
 // Enums
 export enum Components {
   ColorModeSwitcher = "ColorModeSwitcher",
   NavLinks = "NavLinks",
+  LanguageSelector = "LanguageSelector",
 }
 
 export enum ProgrammingLanguages {

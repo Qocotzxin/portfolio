@@ -6,16 +6,15 @@ exports[`NavBar Should match snapshot. 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   height: var(--chakra-sizes-16);
-  -webkit-padding-start: var(--chakra-space-12);
-  padding-inline-start: var(--chakra-space-12);
-  -webkit-padding-end: var(--chakra-space-12);
-  padding-inline-end: var(--chakra-space-12);
+  -webkit-padding-start: var(--chakra-space-8);
+  padding-inline-start: var(--chakra-space-8);
+  -webkit-padding-end: var(--chakra-space-8);
+  padding-inline-end: var(--chakra-space-8);
   padding-top: var(--chakra-space-2);
   padding-bottom: var(--chakra-space-2);
   background: var(--chakra-colors-transparent);
@@ -30,28 +29,12 @@ exports[`NavBar Should match snapshot. 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  max-width: 80em;
-  width: 100%;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.emotion-2>*:not(style)~*:not(style) {
+.emotion-1>*:not(style)~*:not(style) {
   margin-top: 0px;
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
@@ -60,7 +43,7 @@ exports[`NavBar Should match snapshot. 1`] = `
   margin-inline-start: var(--chakra-space-2);
 }
 
-.emotion-3 {
+.emotion-2 {
   transition-property: var(--chakra-transition-property-common);
   transition-duration: var(--chakra-transition-duration-fast);
   transition-timing-function: var(--chakra-transition-easing-ease-out);
@@ -74,18 +57,18 @@ exports[`NavBar Should match snapshot. 1`] = `
   transition: text-shadow 0.2s linear,color 0.2s linear;
 }
 
-.emotion-3:hover,
-.emotion-3[data-hover] {
+.emotion-2:hover,
+.emotion-2[data-hover] {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-3:focus-visible,
-.emotion-3[data-focus-visible] {
+.emotion-2:focus-visible,
+.emotion-2[data-focus-visible] {
   box-shadow: var(--chakra-shadows-outline);
 }
 
-.emotion-4 {
+.emotion-3 {
   transition-property: var(--chakra-transition-property-common);
   transition-duration: var(--chakra-transition-duration-fast);
   transition-timing-function: var(--chakra-transition-easing-ease-out);
@@ -115,26 +98,26 @@ exports[`NavBar Should match snapshot. 1`] = `
   transform: translateY(-250%);
 }
 
-.emotion-4:hover,
-.emotion-4[data-hover] {
+.emotion-3:hover,
+.emotion-3[data-hover] {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-4:focus-visible,
-.emotion-4[data-focus-visible] {
+.emotion-3:focus-visible,
+.emotion-3[data-focus-visible] {
   box-shadow: var(--chakra-shadows-outline);
 }
 
-.emotion-4:focus,
-.emotion-4[data-focus] {
+.emotion-3:focus,
+.emotion-3[data-focus] {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.emotion-5 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -148,7 +131,7 @@ exports[`NavBar Should match snapshot. 1`] = `
   flex-direction: row;
 }
 
-.emotion-5>*:not(style)~*:not(style) {
+.emotion-4>*:not(style)~*:not(style) {
   margin-top: 0px;
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
@@ -157,10 +140,7 @@ exports[`NavBar Should match snapshot. 1`] = `
   margin-inline-start: var(--chakra-space-4);
 }
 
-.emotion-6 {
-  -webkit-order: 100;
-  -ms-flex-order: 100;
-  order: 100;
+.emotion-5 {
   width: 64px;
   height: 32px;
   background: var(--chakra-colors-blue-700);
@@ -168,13 +148,13 @@ exports[`NavBar Should match snapshot. 1`] = `
   position: relative;
 }
 
-.chakra-ui-dark .emotion-6:not([data-theme]),
-[data-theme=dark] .emotion-6:not([data-theme]),
-.emotion-6[data-theme=dark] {
+.chakra-ui-dark .emotion-5:not([data-theme]),
+[data-theme=dark] .emotion-5:not([data-theme]),
+.emotion-5[data-theme=dark] {
   border-color: var(--chakra-colors-gray-50);
 }
 
-.emotion-7 {
+.emotion-6 {
   border-radius: 50%;
   background: var(--chakra-colors-blue-700);
   width: 18px;
@@ -185,7 +165,7 @@ exports[`NavBar Should match snapshot. 1`] = `
   z-index: 3;
 }
 
-.emotion-8 {
+.emotion-7 {
   border-radius: 50%;
   background: var(--chakra-colors-yellow-400);
   width: 18px;
@@ -202,7 +182,15 @@ exports[`NavBar Should match snapshot. 1`] = `
   z-index: 2;
 }
 
-.emotion-9 {
+.emotion-8 {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -220,7 +208,15 @@ exports[`NavBar Should match snapshot. 1`] = `
   z-index: 1;
 }
 
-.emotion-10 {
+.emotion-9 {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -243,71 +239,67 @@ exports[`NavBar Should match snapshot. 1`] = `
     class="emotion-0"
   >
     <div
-      class="emotion-1"
+      class="chakra-stack emotion-1"
     >
-      <div
-        class="chakra-stack emotion-2"
-      >
-        <a
-          class="chakra-link emotion-3"
-          href="/"
-        />
-      </div>
       <a
-        class="chakra-link emotion-4"
-        data-testid="SkipLink"
-        href="#main"
+        class="chakra-link emotion-2"
+        href="/"
+      />
+    </div>
+    <a
+      class="chakra-link emotion-3"
+      data-testid="SkipLink"
+      href="#main"
+    >
+      Skip to content
+    </a>
+    <div
+      class="chakra-stack emotion-4"
+    >
+      <button
+        aria-label="Switch to dark mode"
+        class="emotion-5"
       >
-        Skip to content
-      </a>
-      <div
-        class="chakra-stack emotion-5"
-      >
-        <button
-          aria-label="Switch to dark mode"
+        <div
           class="emotion-6"
+        />
+        <div
+          class="emotion-7"
+        />
+        <svg
+          class="chakra-icon chakra-icon stars emotion-8"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <div
-            class="emotion-7"
+          <path
+            d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"
           />
-          <div
-            class="emotion-8"
+        </svg>
+        <svg
+          class="chakra-icon chakra-icon cloud emotion-9"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5z"
           />
-          <svg
-            class="chakra-icon stars emotion-9"
-            fill="currentColor"
-            focusable="false"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 16 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"
-            />
-          </svg>
-          <svg
-            class="chakra-icon cloud emotion-10"
-            fill="currentColor"
-            focusable="false"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 16 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11.473 9a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 14h8.5a2.5 2.5 0 1 0-.027-5z"
-            />
-            <path
-              d="M14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.769z"
-            />
-          </svg>
-        </button>
-      </div>
+          <path
+            d="M14.544 9.772a3.506 3.506 0 0 0-2.225-1.676 5.502 5.502 0 0 0-6.337-4.002 4.002 4.002 0 0 1 7.392.91 2.5 2.5 0 0 1 1.17 4.769z"
+          />
+        </svg>
+      </button>
     </div>
   </nav>
   <span

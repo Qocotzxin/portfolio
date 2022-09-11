@@ -7,26 +7,36 @@ interface BaseLinkProps {
   activeRoute: string;
   link: NavLink;
   isMenuItem?: boolean;
+  locale?: string;
+  isCurrentLocale?: boolean;
 }
 
 const BaseLink: FC<BaseLinkProps & LinkProps> = ({
   activeRoute,
   link,
   isMenuItem,
+  locale,
+  isCurrentLocale,
 }) => {
   const linkProps: MenuItemProps & LinkProps = {
-    variant: activeRoute === `/${link.url}` ? "selected" : "body",
+    variant: (
+      isCurrentLocale === undefined ? activeRoute === link.url : isCurrentLocale
+    )
+      ? "selected"
+      : "body",
     order: link.order,
-    "aria-current": activeRoute === `/${link.url}`,
+    "aria-current":
+      isCurrentLocale == undefined ? activeRoute === link.url : isCurrentLocale,
   };
 
   return (
     <NextLink
-      href={activeRoute === `/${link.url}` ? "#main" : `/${link.url}`}
+      href={activeRoute === link.url ? "#main" : link.url}
       passHref
+      locale={locale}
     >
       {isMenuItem ? (
-        <MenuItem as={Link} {...linkProps}>
+        <MenuItem as={Link} textTransform="capitalize" {...linkProps}>
           {link.text}
         </MenuItem>
       ) : (

@@ -7,7 +7,6 @@ exports[`NavHeading Should match snapshot. 1`] = `
   font-size: var(--chakra-fontSizes-xl);
   line-height: 1.33;
   position: relative;
-  padding-left: 15px;
   padding-top: 1px;
   width: 100%;
   background-image: linear-gradient(to right, var(--chakra-colors-teal-300), var(--chakra-colors-blue-300));
