@@ -11,6 +11,7 @@ import { FC } from "react";
 
 const NavLinks: FC = () => {
   const router = useRouter();
+  const currentPath = removeForwardSlash(router.pathname);
   const { navLinks } = useHygraphContext();
   const ariaLabel = useAriaLabel({ component: Components.NavLinks });
 
@@ -26,7 +27,7 @@ const NavLinks: FC = () => {
         >
           {navLinks?.map((link) => (
             <ListItem key={link.url} mx="2">
-              <BaseLink activeRoute={router.pathname} link={link} />
+              <BaseLink activeRoute={currentPath} link={link} />
             </ListItem>
           ))}
         </List>
@@ -42,7 +43,7 @@ const NavLinks: FC = () => {
             <BaseLink
               key={link.url}
               isMenuItem
-              activeRoute={removeForwardSlash(router.pathname)}
+              activeRoute={currentPath}
               link={link}
             />
           ))}

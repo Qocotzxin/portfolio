@@ -13,7 +13,7 @@ exports[`Footer. Should match snapshot. 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  height: 64px;
+  height: 32px;
   width: 100%;
   -webkit-padding-start: var(--chakra-space-8);
   padding-inline-start: var(--chakra-space-8);
@@ -22,7 +22,6 @@ exports[`Footer. Should match snapshot. 1`] = `
   position: fixed;
   bottom: 0px;
   left: 0px;
-  border-top: 1px solid var(--chakra-colors-gray-100);
 }
 
 .emotion-1 {
@@ -166,6 +165,9 @@ exports[`Footer. Should match snapshot. 1`] = `
   outline: 2px solid transparent;
   outline-offset: 2px;
   color: inherit;
+  font-family: MajorMonoDisplay;
+  font-size: var(--chakra-fontSizes-xs);
+  font-weight: var(--chakra-fontWeights-bold);
   -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
   transition: text-shadow 0.2s linear,color 0.2s linear;
   position: relative;
@@ -200,10 +202,10 @@ exports[`Footer. Should match snapshot. 1`] = `
   transition-property: var(--chakra-transition-property-background);
   transition-duration: var(--chakra-transition-duration-ultra-fast);
   transition-timing-function: var(--chakra-transition-easing-ease-in);
-  text-transform: capitalize;
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
+  text-transform: lowercase;
 }
 
 .emotion-8:hover,
@@ -280,6 +282,9 @@ exports[`Footer. Should match snapshot. 1`] = `
   outline: 2px solid transparent;
   outline-offset: 2px;
   color: inherit;
+  font-family: MajorMonoDisplay;
+  font-size: var(--chakra-fontSizes-xs);
+  font-weight: var(--chakra-fontWeights-bold);
   -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
   transition: text-shadow 0.2s linear,color 0.2s linear;
   position: relative;
@@ -314,10 +319,10 @@ exports[`Footer. Should match snapshot. 1`] = `
   transition-property: var(--chakra-transition-property-background);
   transition-duration: var(--chakra-transition-duration-ultra-fast);
   transition-timing-function: var(--chakra-transition-easing-ease-in);
-  text-transform: capitalize;
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+  text-transform: lowercase;
 }
 
 .emotion-9:hover,

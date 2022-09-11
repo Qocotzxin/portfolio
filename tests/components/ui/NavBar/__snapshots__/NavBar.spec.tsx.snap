@@ -17,7 +17,16 @@ exports[`NavBar Should match snapshot. 1`] = `
   padding-inline-end: var(--chakra-space-8);
   padding-top: var(--chakra-space-2);
   padding-bottom: var(--chakra-space-2);
-  background: var(--chakra-colors-transparent);
+  background: var(--chakra-colors-white);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.chakra-ui-dark .emotion-0:not([data-theme]),
+[data-theme=dark] .emotion-0:not([data-theme]),
+.emotion-0[data-theme=dark] {
+  background: var(--chakra-colors-gray-800);
 }
 
 .emotion-1 {
@@ -53,6 +62,9 @@ exports[`NavBar Should match snapshot. 1`] = `
   outline: 2px solid transparent;
   outline-offset: 2px;
   color: inherit;
+  font-family: MajorMonoDisplay;
+  font-size: var(--chakra-fontSizes-xs);
+  font-weight: var(--chakra-fontWeights-bold);
   -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
   transition: text-shadow 0.2s linear,color 0.2s linear;
 }
@@ -78,6 +90,9 @@ exports[`NavBar Should match snapshot. 1`] = `
   outline: 2px solid transparent;
   outline-offset: 2px;
   color: var(--chakra-colors-gray-100);
+  font-family: MajorMonoDisplay;
+  font-size: var(--chakra-fontSizes-sm);
+  font-weight: var(--chakra-fontWeights-bold);
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   -webkit-padding-start: var(--chakra-space-2);
@@ -87,8 +102,6 @@ exports[`NavBar Should match snapshot. 1`] = `
   padding-top: var(--chakra-space-1);
   padding-bottom: var(--chakra-space-1);
   background: var(--chakra-colors-teal-500);
-  font-size: var(--chakra-fontSizes-sm);
-  font-weight: var(--chakra-fontWeights-bold);
   position: absolute;
   left: 50%;
   border-radius: var(--chakra-radii-sm);
@@ -244,7 +257,73 @@ exports[`NavBar Should match snapshot. 1`] = `
       <a
         class="chakra-link emotion-2"
         href="/"
-      />
+      >
+        <svg
+          aria-labelledby="title"
+          height="48"
+          role="presentation"
+          viewBox="0 0 48 48"
+          width="48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title
+            id="title"
+            lang="en"
+          >
+            Logo
+          </title>
+          <lineargradient
+            gradientUnits="userSpaceOnUse"
+            id="gradient"
+            x1="0"
+            x2="0"
+            y1="0"
+            y2="100%"
+          >
+            <stop
+              offset="40%"
+              stop-color="#4FD1C5"
+            />
+            <stop
+              offset="70%"
+              stop-color="#4299E1"
+            />
+          </lineargradient>
+          <circle
+            class="outterCircle"
+            cx="24"
+            cy="24"
+            data-testid="NavLogo-outter-circle"
+            fill="none"
+            r="20"
+            stroke="#4FD1C5"
+            stroke-dasharray="128"
+            stroke-dashoffset="128"
+            stroke-width="1"
+          />
+          <circle
+            class="innerCircle"
+            cx="24"
+            cy="24"
+            data-testid="NavLogo-inner-circle"
+            fill="none"
+            r="16"
+            stroke="#4299E1"
+            stroke-dasharray="128"
+            stroke-dashoffset="128"
+            stroke-width="1"
+          />
+          <text
+            class="text textAnimation"
+            data-testid="NavLogo-text"
+            fill="url(#gradient)"
+            x="14"
+            y="32"
+          >
+            CE
+          </text>
+        </svg>
+      </a>
     </div>
     <a
       class="chakra-link emotion-3"

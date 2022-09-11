@@ -5,6 +5,14 @@ body {
 }
 
 @font-face {
+    font-family: "MajorMonoDisplay";
+    font-display: swap;
+    src: url('../public/fonts/MajorMonoDisplay-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Oswald";
     font-display: swap;
     src: url('../public/fonts/Oswald-ExtraLight.ttf');

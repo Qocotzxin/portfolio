@@ -31,7 +31,11 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
           <NavBar />
         </header>
 
-        <main id="main">{children}</main>
+        <main id="main">
+          <Box height="200vh" mt="16">
+            {children}
+          </Box>
+        </main>
 
         <footer>
           <Footer />

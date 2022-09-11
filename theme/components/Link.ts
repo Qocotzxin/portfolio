@@ -26,6 +26,9 @@ const bodyVariant = {
 
 const Link = {
   baseStyle: {
+    fontFamily: "MajorMonoDisplay",
+    fontSize: "xs",
+    fontWeight: "bold",
     transition: "text-shadow 0.2s linear, color 0.2s linear",
     _hover: {
       textDecoration: "none",

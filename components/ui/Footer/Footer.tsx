@@ -5,7 +5,7 @@ import { FC } from "react";
 const Footer: FC = () => {
   return (
     <Flex
-      h="64px"
+      h="32px"
       w="100%"
       px="8"
       alignItems="center"
@@ -13,7 +13,6 @@ const Footer: FC = () => {
       position="fixed"
       bottom="0"
       left="0"
-      borderTop="1px solid var(--chakra-colors-gray-100)"
     >
       <HStack />
       <HStack>

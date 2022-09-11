@@ -11,6 +11,9 @@ exports[`SkipLink Should render the skip link as long as the skipLinks array is 
   outline: 2px solid transparent;
   outline-offset: 2px;
   color: var(--chakra-colors-gray-100);
+  font-family: MajorMonoDisplay;
+  font-size: var(--chakra-fontSizes-sm);
+  font-weight: var(--chakra-fontWeights-bold);
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   -webkit-padding-start: var(--chakra-space-2);
@@ -20,8 +23,6 @@ exports[`SkipLink Should render the skip link as long as the skipLinks array is 
   padding-top: var(--chakra-space-1);
   padding-bottom: var(--chakra-space-1);
   background: var(--chakra-colors-teal-500);
-  font-size: var(--chakra-fontSizes-sm);
-  font-weight: var(--chakra-fontWeights-bold);
   position: absolute;
   left: 50%;
   border-radius: var(--chakra-radii-sm);

@@ -25,6 +25,7 @@ const BaseLink: FC<BaseLinkProps & LinkProps> = ({
       ? "selected"
       : "body",
     order: link.order,
+    textTransform: "lowercase",
     "aria-current":
       isCurrentLocale == undefined ? activeRoute === link.url : isCurrentLocale,
   };
@@ -36,7 +37,7 @@ const BaseLink: FC<BaseLinkProps & LinkProps> = ({
       locale={locale}
     >
       {isMenuItem ? (
-        <MenuItem as={Link} textTransform="capitalize" {...linkProps}>
+        <MenuItem as={Link} {...linkProps}>
           {link.text}
         </MenuItem>
       ) : (
