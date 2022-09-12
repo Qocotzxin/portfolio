@@ -67,7 +67,7 @@ exports[`Layout. Should match snapshot. 1`] = `
   outline: 2px solid transparent;
   outline-offset: 2px;
   color: inherit;
-  font-family: MajorMonoDisplay;
+  font-family: var(--chakra-fonts-mono);
   font-size: var(--chakra-fontSizes-xs);
   font-weight: var(--chakra-fontWeights-bold);
   -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
@@ -203,8 +203,13 @@ exports[`Layout. Should match snapshot. 1`] = `
 }
 
 .emotion-10 {
-  height: 200vh;
+  height: 100%;
   margin-top: var(--chakra-space-16);
+  margin-bottom: var(--chakra-space-16);
+  -webkit-padding-start: var(--chakra-space-12);
+  padding-inline-start: var(--chakra-space-12);
+  -webkit-padding-end: var(--chakra-space-12);
+  padding-inline-end: var(--chakra-space-12);
 }
 
 .emotion-11 {
@@ -219,12 +224,13 @@ exports[`Layout. Should match snapshot. 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  height: 32px;
   width: 100%;
   -webkit-padding-start: var(--chakra-space-8);
   padding-inline-start: var(--chakra-space-8);
   -webkit-padding-end: var(--chakra-space-8);
   padding-inline-end: var(--chakra-space-8);
+  padding-top: var(--chakra-space-4);
+  padding-bottom: var(--chakra-space-4);
   position: fixed;
   bottom: 0px;
   left: 0px;

@@ -32,7 +32,7 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
         </header>
 
         <main id="main">
-          <Box height="200vh" mt="16">
+          <Box height="100%" my="16" px="12">
             {children}
           </Box>
         </main>

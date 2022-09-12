@@ -5,9 +5,9 @@ import { FC } from "react";
 const Footer: FC = () => {
   return (
     <Flex
-      h="32px"
       w="100%"
       px="8"
+      py="4"
       alignItems="center"
       justifyContent="space-between"
       position="fixed"

@@ -25,7 +25,7 @@ const BaseLink: FC<BaseLinkProps & LinkProps> = ({
       ? "selected"
       : "body",
     order: link.order,
-    textTransform: "lowercase",
+    textTransform: "capitalize",
     "aria-current":
       isCurrentLocale == undefined ? activeRoute === link.url : isCurrentLocale,
   };
