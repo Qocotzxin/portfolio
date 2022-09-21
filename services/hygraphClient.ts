@@ -37,6 +37,12 @@ export class HygraphClient {
         displayName
         isActive
       }
+      footerLinks(locales: ${defaultLocale}) {
+        url
+        icon
+        isActive
+        ariaLabel
+      }
     }
     `);
 

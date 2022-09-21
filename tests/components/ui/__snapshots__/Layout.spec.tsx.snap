@@ -20,8 +20,6 @@ exports[`Layout. Should match snapshot. 1`] = `
   padding-inline-start: var(--chakra-space-8);
   -webkit-padding-end: var(--chakra-space-8);
   padding-inline-end: var(--chakra-space-8);
-  padding-top: var(--chakra-space-2);
-  padding-bottom: var(--chakra-space-2);
   background: var(--chakra-colors-white);
   position: fixed;
   top: 0px;
@@ -151,8 +149,8 @@ exports[`Layout. Should match snapshot. 1`] = `
 }
 
 .emotion-8 {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   display: inline-block;
   line-height: 1em;
   -webkit-flex-shrink: 0;
@@ -177,8 +175,8 @@ exports[`Layout. Should match snapshot. 1`] = `
 }
 
 .emotion-9 {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   display: inline-block;
   line-height: 1em;
   -webkit-flex-shrink: 0;
@@ -203,13 +201,8 @@ exports[`Layout. Should match snapshot. 1`] = `
 }
 
 .emotion-10 {
-  height: 100%;
-  margin-top: var(--chakra-space-16);
-  margin-bottom: var(--chakra-space-16);
-  -webkit-padding-start: var(--chakra-space-12);
-  padding-inline-start: var(--chakra-space-12);
-  -webkit-padding-end: var(--chakra-space-12);
-  padding-inline-end: var(--chakra-space-12);
+  padding-top: var(--chakra-space-16);
+  padding-bottom: var(--chakra-space-16);
 }
 
 .emotion-11 {
@@ -225,15 +218,21 @@ exports[`Layout. Should match snapshot. 1`] = `
   -webkit-justify-content: space-between;
   justify-content: space-between;
   width: 100%;
+  height: var(--chakra-sizes-16);
   -webkit-padding-start: var(--chakra-space-8);
   padding-inline-start: var(--chakra-space-8);
   -webkit-padding-end: var(--chakra-space-8);
   padding-inline-end: var(--chakra-space-8);
-  padding-top: var(--chakra-space-4);
-  padding-bottom: var(--chakra-space-4);
+  background: var(--chakra-colors-white);
   position: fixed;
   bottom: 0px;
   left: 0px;
+}
+
+.chakra-ui-dark .emotion-11:not([data-theme]),
+[data-theme=dark] .emotion-11:not([data-theme]),
+.emotion-11[data-theme=dark] {
+  background: var(--chakra-colors-gray-800);
 }
 
 .emotion-12 {
@@ -248,9 +247,33 @@ exports[`Layout. Should match snapshot. 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: var(--chakra-space-4);
 }
 
 .emotion-12>*:not(style)~*:not(style) {
+  margin-top: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-start: var(--chakra-space-4);
+  margin-inline-start: var(--chakra-space-4);
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-13>*:not(style)~*:not(style) {
   margin-top: 0px;
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
@@ -335,8 +358,8 @@ exports[`Layout. Should match snapshot. 1`] = `
 }
 
 .emotion-16 {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   display: inline-block;
   line-height: 1em;
   -webkit-flex-shrink: 0;
@@ -514,7 +537,7 @@ exports[`Layout. Should match snapshot. 1`] = `
           class="chakra-stack emotion-12"
         />
         <div
-          class="chakra-stack emotion-12"
+          class="chakra-stack emotion-13"
         >
           <div
             class="emotion-14"

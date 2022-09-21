@@ -37,6 +37,20 @@ export const hygraphMockData: Partial<HygraphData> = {
     { code: "es", displayName: "spanish", isActive: true },
     { code: "nl", displayName: "dutch", isActive: false },
   ],
+  footerLinks: [
+    {
+      url: "https://github.com",
+      isActive: true,
+      icon: "github",
+      ariaLabel: "Visit Github",
+    },
+    {
+      url: "https://test.com",
+      isActive: false,
+      icon: "github",
+      ariaLabel: "Visit test",
+    },
+  ],
 };
 
 interface AllTheProvidersProps {

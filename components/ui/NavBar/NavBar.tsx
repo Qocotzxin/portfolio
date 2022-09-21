@@ -41,7 +41,6 @@ const NavBar: FC = () => {
       w="100%"
       h="16"
       px="8"
-      py="2"
       bg="white"
       _dark={{ bg: "gray.800" }}
       justifyContent="space-between"

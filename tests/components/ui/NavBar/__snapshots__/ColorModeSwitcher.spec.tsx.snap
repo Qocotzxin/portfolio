@@ -44,8 +44,8 @@ exports[`ColorModeSwitcher Should match snapshot. 1`] = `
 }
 
 .emotion-3 {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   display: inline-block;
   line-height: 1em;
   -webkit-flex-shrink: 0;
@@ -70,8 +70,8 @@ exports[`ColorModeSwitcher Should match snapshot. 1`] = `
 }
 
 .emotion-4 {
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   display: inline-block;
   line-height: 1em;
   -webkit-flex-shrink: 0;

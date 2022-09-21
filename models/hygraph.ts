@@ -1,3 +1,5 @@
+import { DailyMotion, Flickr, Github, LinkedIn } from "@icons";
+
 // Hydration type
 export interface HygraphModel {
   hygraphData: HygraphTree;
@@ -11,6 +13,7 @@ export interface HygraphData {
   ariaLabels: AriaLabel[];
   metaTags: MetaTag[];
   navLinks: NavLink[];
+  footerLinks: FooterLink[];
   jobs: Job[];
   skipLinks: SkipLink[];
   languages: Language[];
@@ -33,6 +36,13 @@ export interface NavLink {
   text: string;
   url: string;
   order: number;
+}
+
+export interface FooterLink {
+  url: string;
+  icon: keyof typeof ICON_MAP;
+  isActive: boolean;
+  ariaLabel: string;
 }
 
 export interface Job {
@@ -114,3 +124,10 @@ export enum Tooling {
   Vite = "Vite",
   Webpack = "Webpack",
 }
+
+export const ICON_MAP = {
+  github: Github,
+  linkedin: LinkedIn,
+  flickr: Flickr,
+  dailyMotion: DailyMotion,
+};
