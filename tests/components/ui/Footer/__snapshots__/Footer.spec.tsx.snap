@@ -100,7 +100,7 @@ exports[`Footer. Should match snapshot. 1`] = `
 
 .emotion-3:hover,
 .emotion-3[data-hover] {
-  color: var(--chakra-colors-blue-300);
+  color: var(--chakra-colors-blue-400);
 }
 
 .emotion-4 {

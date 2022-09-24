@@ -33,6 +33,7 @@ const ColorModeSwitcher: FC = () => {
       onClick={onToggle}
       position="relative"
       aria-label={ariaLabel?.content}
+      aria-live="polite"
     >
       {/* Visually hidden circle */}
       <Box

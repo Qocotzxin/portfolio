@@ -43,6 +43,10 @@ export class HygraphClient {
         isActive
         ariaLabel
       }
+      heroes(locales: ${defaultLocale}) {
+        title
+        subtitle
+      }
     }
     `);
 

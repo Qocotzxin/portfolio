@@ -58,9 +58,7 @@ const NavLogo: FC<NavLogoProps> = ({ withAnimation }) => {
         y="32"
         fill="url(#gradient)"
         data-testid="NavLogo-text"
-        className={`${styles.text} ${
-          withAnimation ? styles.textAnimation : ""
-        }`}
+        className={`${styles.text} ${withAnimation ? "fadeIn-regular" : ""}`}
       >
         CE
       </text>

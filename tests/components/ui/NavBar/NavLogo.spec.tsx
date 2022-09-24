@@ -18,7 +18,7 @@ describe("NavLogo", () => {
       "innerCircle"
     );
 
-    expect(screen.getByTestId("NavLogo-text")).toHaveClass("textAnimation");
+    expect(screen.getByTestId("NavLogo-text")).toHaveClass("fadeIn-regular");
   });
 
   it("Should NOT have animation related classes when withAnimation is false or undefined.", () => {
@@ -33,7 +33,7 @@ describe("NavLogo", () => {
     );
 
     expect(screen.queryByTestId("NavLogo-text")).not.toHaveClass(
-      "textAnimation"
+      "fadeIn-regular"
     );
   });
 });

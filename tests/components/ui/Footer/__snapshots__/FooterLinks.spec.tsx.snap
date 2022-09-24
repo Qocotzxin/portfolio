@@ -70,7 +70,7 @@ exports[`FooterLinks Should match snapshot. 1`] = `
 
 .emotion-2:hover,
 .emotion-2[data-hover] {
-  color: var(--chakra-colors-blue-300);
+  color: var(--chakra-colors-blue-400);
 }
 
 <div>

@@ -58,7 +58,7 @@ exports[`NavLogo Should match snapshot. 1`] = `
       stroke-width="1"
     />
     <text
-      class="text textAnimation"
+      class="text fadeIn-regular"
       data-testid="NavLogo-text"
       fill="url(#gradient)"
       x="14"

@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero. Should render Hero and match snapshot when heroes ndata is available. 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background: var(--chakra-colors-gray-100);
+  height: 100%;
+  width: 100%;
+  color: var(--chakra-colors-white);
+  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: var(--chakra-space-12);
+}
+
+.chakra-ui-dark .emotion-0:not([data-theme]),
+[data-theme=dark] .emotion-0:not([data-theme]),
+.emotion-0[data-theme=dark] {
+  background: var(--chakra-colors-black);
+}
+
+@media screen and (min-width: 48em) {
+  .emotion-0 {
+    height: 75%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.emotion-1>*:not(style)~*:not(style) {
+  margin-top: var(--chakra-space-2);
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+}
+
+.emotion-2 {
+  font-family: var(--chakra-fonts-heading);
+  font-weight: var(--chakra-fontWeights-bold);
+  background-image: linear-gradient(to right, var(--chakra-colors-teal-600), var(--chakra-colors-yellow-400));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-bottom: var(--chakra-space-1);
+}
+
+@media screen and (min-width: 0em) and (max-width: 61.9375em) {
+  .emotion-2 {
+    font-size: var(--chakra-fontSizes-4xl);
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 48em) {
+    .emotion-2 {
+      font-size: var(--chakra-fontSizes-5xl);
+      line-height: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .emotion-2 {
+    font-size: var(--chakra-fontSizes-6xl);
+    line-height: 1;
+  }
+
+  @media screen and (min-width: 48em) {
+    .emotion-2 {
+      font-size: var(--chakra-fontSizes-7xl);
+    }
+  }
+}
+
+.chakra-ui-dark .emotion-2:not([data-theme]),
+[data-theme=dark] .emotion-2:not([data-theme]),
+.emotion-2[data-theme=dark] {
+  background-image: linear-gradient(to right, var(--chakra-colors-teal-400), var(--chakra-colors-yellow-300));
+}
+
+.emotion-3 {
+  font-family: var(--chakra-fonts-heading);
+  font-weight: var(--chakra-fontWeights-bold);
+  background-image: linear-gradient(to left, var(--chakra-colors-teal-600), var(--chakra-colors-yellow-400));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@media screen and (min-width: 0em) and (max-width: 61.9375em) {
+  .emotion-3 {
+    font-size: var(--chakra-fontSizes-4xl);
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 48em) {
+    .emotion-3 {
+      font-size: var(--chakra-fontSizes-5xl);
+      line-height: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .emotion-3 {
+    font-size: var(--chakra-fontSizes-6xl);
+    line-height: 1;
+  }
+
+  @media screen and (min-width: 48em) {
+    .emotion-3 {
+      font-size: var(--chakra-fontSizes-7xl);
+    }
+  }
+}
+
+.chakra-ui-dark .emotion-3:not([data-theme]),
+[data-theme=dark] .emotion-3:not([data-theme]),
+.emotion-3[data-theme=dark] {
+  background-image: linear-gradient(to left, var(--chakra-colors-teal-400), var(--chakra-colors-yellow-300));
+}
+
+.emotion-4 {
+  width: 210.18755mm;
+  height: 177.61084mm;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
+  vertical-align: middle;
+  will-change: transform,filter;
+  font-family: var(--chakra-fonts-mono);
+  font-size: var(--chakra-fontSizes-3xs);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 48em) {
+  .emotion-4 {
+    -webkit-align-self: baseline;
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+}
+
+<div>
+  <div
+    class="fadeIn-slower emotion-0"
+    data-testid="Hero"
+  >
+    <div
+      class="chakra-stack fadeIn-slower emotion-1"
+    >
+      <h1
+        class="chakra-heading emotion-2"
+      >
+        Hero title
+      </h1>
+      <h2
+        class="chakra-heading emotion-3"
+      >
+        Hero subtitle
+      </h2>
+    </div>
+    <svg
+      class="chakra-icon disk emotion-4"
+      focusable="false"
+      role="img"
+      viewBox="0 0 210.18755 177.61084"
+    >
+      <g
+        class="innerBlur"
+        transform="translate(4.154307,-64.943708)"
+      >
+        <path
+          d="m 100.52032,69.591905 c -18.218141,2.220701 -36.797374,2.15713 -54.606406,6.592284 -8.904515,2.217577 -17.592751,5.581273 -25.234032,10.6625 -7.641281,5.081227 -14.2134857,11.943827 -18.2349949,20.192191 -5.1267422,10.51527 -5.8688154,22.81208 -3.6295817,34.29425 2.2392336,11.48216 7.3010655,22.24451 13.3160506,32.27817 10.093334,16.83679 23.087129,32.05094 38.829702,43.77801 15.742572,11.72708 34.285221,19.89246 53.741412,22.50199 19.45618,2.60953 39.80004,-0.4826 57.12061,-9.72115 17.32056,-9.23855 31.41729,-24.74469 37.98348,-43.24437 7.5994,-21.41067 4.85846,-45.49938 -3.63243,-66.57241 C 190.8979,107.25861 183.372,94.914883 173.0952,85.235087 162.81839,75.555291 149.66504,68.655633 135.63375,67.095439 c -11.69338,-1.300233 -23.43443,1.072854 -35.11343,2.496466 z"
+          style="fill: #000000; fill-opacity: 1; stroke: #000000; stroke-width: 1.165;"
+        />
+        <path
+          d="m 98.339785,79.527697 c -15.28559,1.951281 -30.879166,2.081411 -45.796648,5.944764 -7.458741,1.931677 -14.727596,4.813412 -21.123291,9.109837 -6.395696,4.296426 -11.900688,10.058432 -15.306708,16.969522 -4.422266,8.97314 -5.100216,19.48742 -3.215843,29.31203 1.884374,9.8246 6.194676,19.03892 11.336997,27.61973 8.455193,14.10888 19.338083,26.85988 32.522753,36.69427 13.18467,9.83439 28.713969,16.68997 45.013475,18.89829 16.29951,2.20832 33.34791,-0.35223 47.87857,-8.06005 14.53067,-7.70782 26.37679,-20.6644 31.93248,-36.14616 6.56165,-18.28502 4.12435,-38.87653 -3.04544,-56.93176 -4.40793,-11.10023 -10.63466,-21.61775 -19.22515,-29.915243 -8.59049,-8.297495 -19.66591,-14.273772 -31.53204,-15.630172 -9.80305,-1.120572 -19.65169,0.885524 -29.439155,2.134942 z"
+          style="fill: #111111; fill-opacity: 1; stroke: #000000; stroke-width: 0.867265;"
+        />
+        <path
+          d="m 98.296915,99.641396 c -10.205243,1.401114 -20.619648,1.693614 -30.549592,4.433384 -4.964972,1.36988 -9.79391,3.36142 -14.04563,6.26838 -4.251721,2.90695 -7.915558,6.76046 -10.222892,11.36521 -3.087702,6.16213 -3.603203,13.4045 -2.339501,20.1801 1.263703,6.77561 4.212097,13.13709 7.753638,19.05007 5.628981,9.39818 12.871612,17.89414 21.64566,24.45366 8.774047,6.55952 19.107918,11.14155 29.960272,12.63738 10.85236,1.49583 22.2094,-0.1749 31.90695,-5.27085 9.69755,-5.09595 17.62584,-13.68469 21.38596,-23.97414 4.59369,-12.57048 2.80212,-26.74955 -2.03031,-39.23019 -2.91989,-7.54114 -6.97545,-14.74537 -12.67267,-20.48439 -5.69721,-5.73901 -13.13588,-9.941855 -21.16564,-10.899745 -6.53479,-0.779551 -13.10629,0.575983 -19.626245,1.471131 z"
+          style="fill: #ECD51B; fill-opacity: 1; stroke: #000000; stroke-width: 0.587815;"
+        />
+        <path
+          d="m 99.60363,118.82408 c -4.807659,1.16647 -9.646257,2.39168 -14.086654,4.57276 -4.440396,2.18108 -8.507188,5.41357 -10.857231,9.76691 -2.12137,3.92973 -2.720791,8.57803 -2.131096,13.00468 0.589695,4.42666 2.317411,8.64656 4.594658,12.48806 2.51613,4.24448 5.73679,8.09877 9.639526,11.11789 3.902737,3.01913 8.499959,5.18656 13.364577,6.01236 4.86462,0.8258 9.99269,0.27652 14.46708,-1.80345 4.47439,-2.07997 8.25196,-5.72154 10.26095,-10.22825 1.76748,-3.96495 2.13814,-8.43991 1.74089,-12.76276 -0.39724,-4.32284 -1.52896,-8.54013 -2.66472,-12.72998 -1.18288,-4.3637 -2.40482,-8.79428 -4.78958,-12.63538 -1.19238,-1.92054 -2.67399,-3.67714 -4.46704,-5.05381 -1.79306,-1.37666 -3.906,-2.36478 -6.14084,-2.705 -2.97968,-0.45361 -6.00149,0.24531 -8.93052,0.95597 z"
+          style="fill: #2449DA; fill-opacity: 1; stroke: #000000; stroke-width: 0.319638;"
+        />
+        <path
+          d="m 101.02823,132.44617 c -2.643499,0.37073 -5.341323,0.46284 -7.911051,1.18535 -1.284864,0.36126 -2.533765,0.88256 -3.633594,1.63871 -1.099829,0.75614 -2.0479,1.75498 -2.648076,2.94711 -0.810546,1.60999 -0.94913,3.50381 -0.621389,5.27627 0.32774,1.77247 1.097063,3.43716 2.023121,4.98359 1.456752,2.43264 3.33089,4.63195 5.601278,6.33055 2.270388,1.69859 4.944368,2.88587 7.753001,3.27507 2.80863,0.3892 5.74837,-0.0404 8.25996,-1.35641 2.51159,-1.31597 4.56673,-3.53576 5.5447,-6.19724 1.20715,-3.28519 0.72933,-6.99265 -0.52569,-10.25986 -0.75441,-1.96396 -1.79664,-3.84472 -3.26924,-5.34729 -1.4726,-1.50258 -3.403,-2.60836 -5.4917,-2.86059 -1.69185,-0.2043 -3.3937,0.14807 -5.08132,0.38474 z"
+          style="fill: #D94214; fill-opacity: 0.996587; stroke: #000000; stroke-width: 0.152958;"
+        />
+        <text
+          x="93"
+          y="148"
+        >
+          HTML
+        </text>
+        <text
+          x="94"
+          y="170"
+        >
+          CSS
+        </text>
+        <text
+          x="95"
+          y="190"
+        >
+          JS
+        </text>
+      </g>
+    </svg>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</div>
+`;

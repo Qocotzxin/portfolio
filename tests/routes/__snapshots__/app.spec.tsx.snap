@@ -201,11 +201,18 @@ exports[`_app Should match snapshot. 1`] = `
 }
 
 .emotion-10 {
-  padding-top: var(--chakra-space-16);
-  padding-bottom: var(--chakra-space-16);
+  height: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 .emotion-11 {
+  padding-top: var(--chakra-space-16);
+  padding-bottom: var(--chakra-space-16);
+  height: 100%;
+}
+
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -229,34 +236,10 @@ exports[`_app Should match snapshot. 1`] = `
   left: 0px;
 }
 
-.chakra-ui-dark .emotion-11:not([data-theme]),
-[data-theme=dark] .emotion-11:not([data-theme]),
-.emotion-11[data-theme=dark] {
+.chakra-ui-dark .emotion-12:not([data-theme]),
+[data-theme=dark] .emotion-12:not([data-theme]),
+.emotion-12[data-theme=dark] {
   background: var(--chakra-colors-gray-800);
-}
-
-.emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: var(--chakra-space-4);
-}
-
-.emotion-12>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: var(--chakra-space-4);
-  margin-inline-start: var(--chakra-space-4);
 }
 
 .emotion-13 {
@@ -271,9 +254,33 @@ exports[`_app Should match snapshot. 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: var(--chakra-space-4);
 }
 
 .emotion-13>*:not(style)~*:not(style) {
+  margin-top: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-start: var(--chakra-space-4);
+  margin-inline-start: var(--chakra-space-4);
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-14>*:not(style)~*:not(style) {
   margin-top: 0px;
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
@@ -282,7 +289,7 @@ exports[`_app Should match snapshot. 1`] = `
   margin-inline-start: 0.5rem;
 }
 
-.emotion-15 {
+.emotion-16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -325,39 +332,39 @@ exports[`_app Should match snapshot. 1`] = `
   padding: 0px;
 }
 
-.emotion-15:focus-visible,
-.emotion-15[data-focus-visible] {
+.emotion-16:focus-visible,
+.emotion-16[data-focus-visible] {
   box-shadow: var(--chakra-shadows-outline);
 }
 
-.emotion-15[disabled],
-.emotion-15[aria-disabled=true],
-.emotion-15[data-disabled] {
+.emotion-16[disabled],
+.emotion-16[aria-disabled=true],
+.emotion-16[data-disabled] {
   opacity: 0.4;
   cursor: not-allowed;
   box-shadow: var(--chakra-shadows-none);
 }
 
-.emotion-15:hover,
-.emotion-15[data-hover] {
+.emotion-16:hover,
+.emotion-16[data-hover] {
   background: rgba(144, 205, 244, 0.12);
 }
 
-.emotion-15:hover[disabled],
-.emotion-15[data-hover][disabled],
-.emotion-15:hover[aria-disabled=true],
-.emotion-15[data-hover][aria-disabled=true],
-.emotion-15:hover[data-disabled],
-.emotion-15[data-hover][data-disabled] {
+.emotion-16:hover[disabled],
+.emotion-16[data-hover][disabled],
+.emotion-16:hover[aria-disabled=true],
+.emotion-16[data-hover][aria-disabled=true],
+.emotion-16:hover[data-disabled],
+.emotion-16[data-hover][data-disabled] {
   background: initial;
 }
 
-.emotion-15:active,
-.emotion-15[data-active] {
+.emotion-16:active,
+.emotion-16[data-active] {
   background: rgba(144, 205, 244, 0.24);
 }
 
-.emotion-16 {
+.emotion-17 {
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -368,11 +375,11 @@ exports[`_app Should match snapshot. 1`] = `
   color: currentColor;
 }
 
-.emotion-17 {
+.emotion-18 {
   z-index: 1;
 }
 
-.emotion-18 {
+.emotion-19 {
   outline: 2px solid transparent;
   outline-offset: 2px;
   background: var(--chakra-colors-gray-700);
@@ -462,7 +469,7 @@ exports[`_app Should match snapshot. 1`] = `
                 stroke-width="1"
               />
               <text
-                class="text textAnimation"
+                class="text fadeIn-regular"
                 data-testid="NavLogo-text"
                 fill="url(#gradient)"
                 x="14"
@@ -477,6 +484,7 @@ exports[`_app Should match snapshot. 1`] = `
           class="chakra-stack emotion-4"
         >
           <button
+            aria-live="polite"
             class="emotion-5"
           >
             <div
@@ -523,10 +531,11 @@ exports[`_app Should match snapshot. 1`] = `
       </nav>
     </header>
     <main
+      class="emotion-10"
       id="main"
     >
       <div
-        class="emotion-10"
+        class="emotion-11"
       >
         <div>
           Test component
@@ -535,30 +544,30 @@ exports[`_app Should match snapshot. 1`] = `
     </main>
     <footer>
       <div
-        class="emotion-11"
+        class="emotion-12"
       >
         <div
-          class="chakra-stack emotion-12"
+          class="chakra-stack emotion-13"
         />
         <div
-          class="chakra-stack emotion-13"
+          class="chakra-stack emotion-14"
         >
           <div
-            class="emotion-14"
+            class="emotion-15"
             data-testid="LanguageSelector"
           >
             <button
               aria-controls="menu-list-:r1:"
               aria-expanded="false"
               aria-haspopup="menu"
-              class="chakra-button chakra-menu__menu-button emotion-15"
+              class="chakra-button chakra-menu__menu-button emotion-16"
               data-testid="FloatingMenu-button"
               id="menu-button-:r1:"
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="chakra-icon emotion-16"
+                class="chakra-icon emotion-17"
                 fill="currentColor"
                 focusable="false"
                 height="1em"
@@ -578,12 +587,12 @@ exports[`_app Should match snapshot. 1`] = `
               </svg>
             </button>
             <div
-              class="emotion-17"
+              class="emotion-18"
               style="visibility: hidden; position: absolute; min-width: max-content; inset: 0 auto auto 0;"
             >
               <div
                 aria-orientation="vertical"
-                class="chakra-menu__menu-list emotion-18"
+                class="chakra-menu__menu-list emotion-19"
                 id="menu-list-:r1:"
                 role="menu"
                 style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"

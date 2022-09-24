@@ -20,7 +20,7 @@ const FooterLinks: FC = () => {
               isExternal
               aria-label={link.ariaLabel}
             >
-              <LinkIcon _hover={{ color: "blue.300" }} />
+              <LinkIcon _hover={{ color: "blue.400" }} />
             </Link>
           )
         );

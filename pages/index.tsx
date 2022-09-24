@@ -1,13 +1,12 @@
+import { VStack } from "@chakra-ui/react";
 import hygraphClient from "@services/hygraphClient";
-import { Box, VStack } from "@chakra-ui/react";
+import Hero from "@ui/Hero";
 import type { GetStaticPropsContext, NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <VStack data-testid="Home">
-      {/* <Box bg="crimson" h="50vh" w="100%">
-        Test 1
-      </Box> */}
+    <VStack data-testid="Home" h="100%" justifyContent="center">
+      <Hero />
     </VStack>
   );
 };

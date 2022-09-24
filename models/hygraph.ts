@@ -17,6 +17,7 @@ export interface HygraphData {
   jobs: Job[];
   skipLinks: SkipLink[];
   languages: Language[];
+  heroes: Hero[];
 }
 
 // Models
@@ -65,6 +66,11 @@ export interface Language {
   code: string;
   displayName: string;
   isActive: boolean;
+}
+
+export interface Hero {
+  title: string;
+  subtitle?: string;
 }
 
 // Enums

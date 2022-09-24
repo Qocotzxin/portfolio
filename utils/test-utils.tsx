@@ -51,6 +51,12 @@ export const hygraphMockData: Partial<HygraphData> = {
       ariaLabel: "Visit test",
     },
   ],
+  heroes: [
+    {
+      title: "Hero title",
+      subtitle: "Hero subtitle",
+    },
+  ],
 };
 
 interface AllTheProvidersProps {
