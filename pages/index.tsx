@@ -1,5 +1,5 @@
 import { VStack } from "@chakra-ui/react";
-import hygraphClient from "@services/hygraphClient";
+import { getHygraphData } from "@services/hygraphClient";
 import Hero from "@ui/Hero";
 import type { GetStaticPropsContext, NextPage } from "next";
 
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   return {
     props: {
-      hygraphData: await hygraphClient.getData(locale),
+      hygraphData: await getHygraphData(locale),
     },
   };
 }

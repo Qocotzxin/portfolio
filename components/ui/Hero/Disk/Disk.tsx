@@ -4,8 +4,8 @@ import styles from "./Disk.module.css";
 
 const Disk: FC<IconProps> = (props) => (
   <Icon
-    width="210.18755mm"
-    height="177.61084mm"
+    width="100%"
+    height="100%"
     viewBox="0 0 210.18755 177.61084"
     willChange="transform, filter"
     className={styles.disk}

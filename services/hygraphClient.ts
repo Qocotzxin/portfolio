@@ -1,57 +1,46 @@
 import { HygraphData } from "@models/hygraph";
 import { gql, GraphQLClient } from "graphql-request";
 
-export class HygraphClient {
-  client: GraphQLClient;
+export const hygraphClient = new GraphQLClient(process.env.HYGRAPH_API!, {
+  headers: {
+    Authorization: `Bearer ${process.env.HYGRAPH_AUTH_TOKEN}`,
+  },
+});
 
-  constructor() {
-    this.client = new GraphQLClient(process.env.HYGRAPH_API!, {
-      headers: {
-        Authorization: `Bearer ${process.env.HYGRAPH_AUTH_TOKEN}`,
-      },
-    });
-  }
-
-  async getData(locale?: string) {
-    const defaultLocale = locale || "en";
-    const data = await this.client.request<HygraphData>(gql`{
-      ariaLabels(locales: ${defaultLocale}) {
-        component
-        content
-        metadata
-      }
-      navLinks(locales: ${defaultLocale}) {
-        text
-        url
-        order
-      }
-      skipLinks(locales: ${defaultLocale}) {
-        text
-      }
-      metaTags(locales: ${defaultLocale}) {
-        name
-        content
-      }
-      languages(locales: ${defaultLocale}) {
-        code
-        displayName
-        isActive
-      }
-      footerLinks(locales: ${defaultLocale}) {
-        url
-        icon
-        isActive
-        ariaLabel
-      }
-      heroes(locales: ${defaultLocale}) {
-        title
-        subtitle
-      }
+export async function getHygraphData(locale = "en") {
+  return await hygraphClient.request<HygraphData>(gql`{
+    ariaLabels(locales: ${locale}) {
+      component
+      content
+      metadata
     }
-    `);
-
-    return data;
+    navLinks(locales: ${locale}) {
+      text
+      url
+      order
+    }
+    skipLinks(locales: ${locale}) {
+      text
+    }
+    metaTags(locales: ${locale}) {
+      name
+      content
+    }
+    languages(locales: ${locale}) {
+      code
+      displayName
+      isActive
+    }
+    footerLinks(locales: ${locale}) {
+      url
+      icon
+      isActive
+      ariaLabel
+    }
+    heroes(locales: ${locale}) {
+      title
+      subtitle
+    }
   }
+  `);
 }
-
-export default new HygraphClient();

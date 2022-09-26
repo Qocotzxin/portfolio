@@ -149,8 +149,8 @@ exports[`Hero. Should render Hero and match snapshot when heroes ndata is availa
 }
 
 .emotion-4 {
-  width: 210.18755mm;
-  height: 177.61084mm;
+  width: 100%;
+  height: 100%;
   display: inline-block;
   line-height: 1em;
   -webkit-flex-shrink: 0;

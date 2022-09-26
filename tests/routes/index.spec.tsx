@@ -1,9 +1,9 @@
 import Home, { getStaticProps } from "@pages/index";
-import hygraphClient from "@services/hygraphClient";
+import { getHygraphData } from "@services/hygraphClient";
 import { render, screen } from "@utils/test-utils";
 
 jest.mock("@services/hygraphClient", () => ({
-  getData: jest.fn(() => ({ test: "test" })),
+  getHygraphData: jest.fn(() => ({ test: "test" })),
 }));
 
 const ORIGINAL_ENV_VARS = process.env;
@@ -27,7 +27,7 @@ describe("Home", () => {
   it("Should call hygraph endpoint with the correct parameters and return the result when executing getStaticProps.", async () => {
     process.env.VERCEL_URL = "test-api";
     const result = await getStaticProps({ locale: "en" });
-    expect(hygraphClient.getData).toHaveBeenCalledWith("en");
+    expect(getHygraphData).toHaveBeenCalledWith("en");
     expect(result).toEqual({
       props: {
         hygraphData: { test: "test" },
