@@ -1,4 +1,4 @@
-import { Button, Icon, IconProps } from "@chakra-ui/react";
+import { Icon, IconProps } from "@chakra-ui/react";
 import { FC } from "react";
 import styles from "./Disk.module.css";
 
@@ -74,5 +74,80 @@ const Disk: FC<IconProps> = (props) => (
     </g>
   </Icon>
 );
+
+// Alternative version
+// const Disk: FC<IconProps> = (props) => (
+//   <Icon
+//     width="100%"
+//     height="100%"
+//     viewBox="0 0 500 500"
+//     willChange="transform, filter"
+//     className={styles.disk}
+//     role="img"
+//     fontFamily="mono"
+//     fontSize="xl"
+//     {...props}
+//   >
+//     <g className={styles.innerBlur}>
+//       <ellipse
+//         cx="250"
+//         cy="250"
+//         rx="200"
+//         ry="220"
+//         stroke="black"
+//         strokeWidth="4"
+//         fill="black"
+//       />
+//       <ellipse
+//         cx="250"
+//         cy="250"
+//         rx="160"
+//         ry="180"
+//         stroke="#1a1a1a"
+//         strokeWidth="4"
+//         fill="#1a1a1a"
+//       />
+//       <ellipse
+//         cx="250"
+//         cy="250"
+//         rx="120"
+//         ry="150"
+//         stroke="#ECD51B"
+//         strokeWidth="4"
+//         fill="#ECD51B"
+//       />
+//       <ellipse
+//         cx="250"
+//         cy="250"
+//         rx="80"
+//         ry="100"
+//         stroke="#2449DA"
+//         strokeWidth="4"
+//         fill="#2449DA"
+//       />
+//       <ellipse
+//         cx="250"
+//         cy="250"
+//         rx="40"
+//         ry="60"
+//         stroke="#D94214"
+//         strokeWidth="4"
+//         fill="#D94214"
+//       />
+
+//       <text x="227" y="258">
+//         HTML
+//       </text>
+
+//       <text x="227" y="178">
+//         CSS
+//       </text>
+
+//       <text x="234" y="142">
+//         JS
+//       </text>
+//     </g>
+//   </Icon>
+// );
 
 export default Disk;

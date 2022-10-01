@@ -20,11 +20,11 @@
 
 @keyframes change-light {
     from {
-        filter: brightness(0.8) drop-shadow(16px 16px 20px var(--chakra-colors-teal-400));
+        filter: brightness(0.8) drop-shadow(4px 4px 24px var(--chakra-colors-teal-400));
     }
 
     to {
-        filter: brightness(1.2) drop-shadow(16px 16px 20px var(--chakra-colors-blue-300));
+        filter: brightness(1.2) drop-shadow(4px 4px 24px var(--chakra-colors-blue-300));
     }
 }
 

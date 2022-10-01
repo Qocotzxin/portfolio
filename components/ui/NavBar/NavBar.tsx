@@ -1,6 +1,6 @@
 import { Flex, HStack, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { FC, useEffect, useRef, useState } from "react";
+import { FC } from "react";
 import ColorModeSwitcher from "./ColorModeSwitcher";
 import NavLinks from "./NavLinks";
 import NavLogo from "./NavLogo";
