@@ -176,11 +176,11 @@ exports[`Hero. Should render Hero and match snapshot when heroes ndata is availa
 
 <div>
   <div
-    class="fadeIn-slower emotion-0"
+    class="emotion-0"
     data-testid="Hero"
   >
     <div
-      class="chakra-stack fadeIn-slower emotion-1"
+      class="chakra-stack emotion-1"
     >
       <h1
         class="chakra-heading emotion-2"

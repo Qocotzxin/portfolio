@@ -5,11 +5,21 @@ import NavBar from "@ui/NavBar";
 import { HygraphProvider } from "contexts/hygraphContext";
 import Head from "next/head";
 import { FC, PropsWithChildren } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
+
+const variants = {
+  hidden: { opacity: 0, x: 200, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: -200, y: 0 },
+};
 
 const Layout: FC<PropsWithChildren & HygraphModel> = ({
   children,
   hygraphData,
 }) => {
+  const router = useRouter();
+
   return (
     <Box
       w="100vw"
@@ -31,10 +41,24 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
           <NavBar />
         </header>
 
-        <Box as="main" id="main" h="100%" position="relative" zIndex={-1}>
-          <Box py="16" h="100%">
-            {children}
-          </Box>
+        <Box id="main" as="main" h="100%" position="relative" zIndex={-1}>
+          <AnimatePresence exitBeforeEnter>
+            <motion.div
+              key={router.route}
+              style={{
+                paddingTop: "4rem",
+                paddingBottom: "4rem",
+                height: "100%",
+              }}
+              initial="hidden"
+              animate="enter"
+              exit="exit"
+              variants={variants}
+              transition={{ type: "linear" }}
+            >
+              {children}
+            </motion.div>
+          </AnimatePresence>
         </Box>
 
         <footer>

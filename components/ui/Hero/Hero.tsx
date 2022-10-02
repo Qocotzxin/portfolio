@@ -33,14 +33,13 @@ const Hero: FC = () => {
       w="100%"
       color="white"
       overflow="hidden"
-      className="fadeIn-slower"
       flexDir={{ base: "column", md: "row" }}
       alignItems="center"
       justifyContent="space-between"
       p="12"
       data-testid="Hero"
     >
-      <VStack spacing={2} zIndex="1" className="fadeIn-slower">
+      <VStack spacing={2} zIndex="1">
         <Heading {...headingProps()} as="h1" pb="1">
           {title}
         </Heading>
