@@ -1,14 +1,9 @@
-import { VStack } from "@chakra-ui/react";
 import { getHygraphData } from "@services/hygraphClient";
-import Hero from "@ui/Hero";
+import Home from "@scenes/Home";
 import type { GetStaticPropsContext, NextPage } from "next";
 
-const Home: NextPage = () => {
-  return (
-    <VStack data-testid="Home" h="100%" justifyContent="center">
-      <Hero />
-    </VStack>
-  );
+const HomePage: NextPage = () => {
+  return <Home />;
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
@@ -19,4 +14,4 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
   };
 }
 
-export default Home;
+export default HomePage;

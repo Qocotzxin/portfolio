@@ -33,9 +33,10 @@ const customJestConfig = {
   ],
   moduleNameMapper: {
     "^@ui/(.*)$": "<rootDir>/components/ui/$1",
-    "^@features/(.*)$": "<rootDir>/components/features/$1",
+    "^@scenes/(.*)$": "<rootDir>/components/scenes/$1",
     "^@styles/(.*)$": "<rootDir>/styles/$1",
     "^@theme(.*)$": "<rootDir>/theme$1",
+    "^types(.*)$": "<rootDir>/types$1",
     "^@icons(.*)$": "<rootDir>/components/icons$1",
     "^@utils/(.*)$": "<rootDir>/utils/$1",
     "^@contexts/(.*)$": "<rootDir>/contexts/$1",

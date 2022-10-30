@@ -1,0 +1,63 @@
+.Home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__hero {
+    background: var(--chakra-colors-gray-100);
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: var(--chakra-space-12);
+
+    @media only screen and (min-width: 48em) {
+      height: 75%;
+      flex-direction: row;
+    }
+
+    &--dark {
+      background: black;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+
+      & > * {
+        margin-bottom: var(--chakra-space-2);
+      }
+
+      h1,
+      h2 {
+        font-size: var(--chakra-fontSizes-4xl);
+        background-image: linear-gradient(
+          to right,
+          var(--chakra-colors-teal-400),
+          var(--chakra-colors-yellow-300)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media only screen and (min-width: 62em) {
+          font-size: var(--chakra-fontSizes-7xl);
+        }
+
+        h1 {
+          padding-bottom: var(--chakra-space-1);
+        }
+
+        &--dark h2 {
+          background-image: linear-gradient(
+            to left,
+            var(--chakra-colors-yellow-300),
+            var(--chakra-colors-teal-400)
+          );
+        }
+      }
+    }
+  }
+}

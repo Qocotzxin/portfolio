@@ -4,6 +4,7 @@ exports[`NavLogo Should match snapshot. 1`] = `
 <div>
   <svg
     aria-labelledby="title"
+    class="NavLogo"
     height="48"
     role="presentation"
     viewBox="0 0 48 48"
@@ -34,7 +35,7 @@ exports[`NavLogo Should match snapshot. 1`] = `
       />
     </lineargradient>
     <circle
-      class="outterCircle"
+      class="NavLogo__outterCircle"
       cx="24"
       cy="24"
       data-testid="NavLogo-outter-circle"
@@ -46,7 +47,7 @@ exports[`NavLogo Should match snapshot. 1`] = `
       stroke-width="1"
     />
     <circle
-      class="innerCircle"
+      class="NavLogo__innerCircle"
       cx="24"
       cy="24"
       data-testid="NavLogo-inner-circle"
@@ -58,7 +59,7 @@ exports[`NavLogo Should match snapshot. 1`] = `
       stroke-width="1"
     />
     <text
-      class="text fadeIn-regular"
+      class="NavLogo__text fadeIn-regular"
       data-testid="NavLogo-text"
       fill="url(#gradient)"
       x="14"

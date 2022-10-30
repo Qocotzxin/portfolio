@@ -1,20 +1,12 @@
-import { Icon, IconProps } from "@chakra-ui/react";
+import { Classes } from "./styles";
 import { FC } from "react";
-import styles from "./Disk.module.css";
 
-const Disk: FC<IconProps> = (props) => (
-  <Icon
-    width="100%"
-    height="100%"
-    viewBox="0 0 210.18755 177.61084"
-    willChange="transform, filter"
-    className={styles.disk}
-    role="img"
-    fontFamily="mono"
-    fontSize="3xs"
-    {...props}
-  >
-    <g transform="translate(4.154307,-64.943708)" className={styles.innerBlur}>
+const Disk: FC = () => (
+  <svg viewBox="0 0 210.18755 177.61084" role="img" className={Classes.disk}>
+    <g
+      transform="translate(4.154307,-64.943708)"
+      className={Classes.diskInnerContainer}
+    >
       <path
         style={{
           fill: "#000000",
@@ -72,7 +64,7 @@ const Disk: FC<IconProps> = (props) => (
         JS
       </text>
     </g>
-  </Icon>
+  </svg>
 );
 
 // Alternative version

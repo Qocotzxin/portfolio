@@ -11,11 +11,11 @@ describe("NavLogo", () => {
     render(<NavLogo withAnimation />);
 
     expect(screen.getByTestId("NavLogo-outter-circle")).toHaveClass(
-      "outterCircle"
+      "NavLogo__outterCircle"
     );
 
     expect(screen.getByTestId("NavLogo-inner-circle")).toHaveClass(
-      "innerCircle"
+      "NavLogo__innerCircle"
     );
 
     expect(screen.getByTestId("NavLogo-text")).toHaveClass("fadeIn-regular");
@@ -25,11 +25,11 @@ describe("NavLogo", () => {
     render(<NavLogo />);
 
     expect(screen.queryByTestId("NavLogo-outter-circle")).not.toHaveClass(
-      "outterCircle"
+      "NavLogo__outterCircle"
     );
 
     expect(screen.queryByTestId("NavLogo-inner-circle")).not.toHaveClass(
-      "innerCircle"
+      "NavLogo__innerCircle"
     );
 
     expect(screen.queryByTestId("NavLogo-text")).not.toHaveClass(

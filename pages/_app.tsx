@@ -1,6 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { HygraphModel } from "@models/hygraph";
-import "@styles/globals.css";
+import "@styles/globals.scss";
 import theme from "@theme";
 import Layout from "@ui/Layout";
 import type { AppProps } from "next/app";

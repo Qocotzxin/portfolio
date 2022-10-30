@@ -1,4 +1,3 @@
-import { List, ListItem, Show } from "@chakra-ui/react";
 import { useHygraphContext } from "@contexts/hygraphContext";
 import { useAriaLabel } from "@hooks/useAriaLabel";
 import { Hamburger } from "@icons";
@@ -8,6 +7,7 @@ import FloatingMenu from "@ui/FloatingMenu";
 import { removeForwardSlash } from "@utils/url";
 import { useRouter } from "next/router";
 import { FC } from "react";
+import { Classes } from "./styles";
 
 const NavLinks: FC = () => {
   const router = useRouter();
@@ -18,22 +18,15 @@ const NavLinks: FC = () => {
   return (
     <>
       {/* Desktop */}
-      <Show above="md">
-        <List
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          data-testid="NavLinks-desktop"
-        >
-          {navLinks?.map((link) => (
-            <ListItem key={link.url} mx="2">
-              <BaseLink activeRoute={currentPath} link={link} />
-            </ListItem>
-          ))}
-        </List>
-      </Show>
+      <ul data-testid="NavLinks-desktop" className={Classes.navLinks}>
+        {navLinks?.map((link) => (
+          <li key={link.url}>
+            <BaseLink activeRoute={currentPath} link={link} />
+          </li>
+        ))}
+      </ul>
       {/* Mobile */}
-      <Show breakpoint="(max-width: 767px)">
+      <div className={Classes.floatingMenu}>
         <FloatingMenu
           ariaLabel={ariaLabel?.content}
           ButtonIcon={<Hamburger />}
@@ -48,7 +41,7 @@ const NavLinks: FC = () => {
             />
           ))}
         </FloatingMenu>
-      </Show>
+      </div>
     </>
   );
 };

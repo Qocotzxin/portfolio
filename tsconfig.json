@@ -5,8 +5,8 @@
       "@ui/*": [
         "components/ui/*"
       ],
-      "@features/*": [
-        "components/features/*"
+      "@scenes/*": [
+        "components/scenes/*"
       ],
       "@styles/*": [
         "styles/*"
@@ -37,6 +37,9 @@
       ],
       "@icons": [
         "components/icons"
+      ],
+      "types": [
+        "types"
       ]
     },
     "target": "es5",

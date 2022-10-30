@@ -1,0 +1,23 @@
+.NavLinks {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+  @media only screen and (min-width: 48em) {
+    display: flex;
+  }
+
+  li {
+    margin-right: var(--chakra-space-2);
+    margin-left: var(--chakra-space-2);
+  }
+}
+
+.FloatingMenu {
+  display: block;
+
+  @media only screen and (min-width: 48em) {
+    display: none;
+  }
+}

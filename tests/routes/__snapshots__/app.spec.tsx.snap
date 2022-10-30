@@ -106,49 +106,82 @@ exports[`_app Should match snapshot. 1`] = `
   margin-inline-start: var(--chakra-space-4);
 }
 
-.emotion-5 {
-  width: 64px;
-  height: 32px;
-  background: var(--chakra-colors-blue-700);
-  border-radius: 18px;
-  position: relative;
-}
-
-.chakra-ui-dark .emotion-5:not([data-theme]),
-[data-theme=dark] .emotion-5:not([data-theme]),
-.emotion-5[data-theme=dark] {
-  border-color: var(--chakra-colors-gray-50);
-}
-
 .emotion-6 {
-  border-radius: 50%;
-  background: var(--chakra-colors-blue-700);
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 0px;
-  top: 7px;
-  z-index: 3;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: var(--chakra-radii-md);
+  font-weight: var(--chakra-fontWeights-semibold);
+  transition-property: var(--chakra-transition-property-common);
+  transition-duration: var(--chakra-transition-duration-normal);
+  height: var(--chakra-sizes-8);
+  min-width: var(--chakra-sizes-8);
+  font-size: var(--chakra-fontSizes-sm);
+  -webkit-padding-start: var(--chakra-space-3);
+  padding-inline-start: var(--chakra-space-3);
+  -webkit-padding-end: var(--chakra-space-3);
+  padding-inline-end: var(--chakra-space-3);
+  color: var(--chakra-colors-blue-200);
+  background: var(--chakra-colors-transparent);
+  padding: 0px;
+}
+
+.emotion-6:focus-visible,
+.emotion-6[data-focus-visible] {
+  box-shadow: var(--chakra-shadows-outline);
+}
+
+.emotion-6[disabled],
+.emotion-6[aria-disabled=true],
+.emotion-6[data-disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: var(--chakra-shadows-none);
+}
+
+.emotion-6:hover,
+.emotion-6[data-hover] {
+  background: rgba(144, 205, 244, 0.12);
+}
+
+.emotion-6:hover[disabled],
+.emotion-6[data-hover][disabled],
+.emotion-6:hover[aria-disabled=true],
+.emotion-6[data-hover][aria-disabled=true],
+.emotion-6:hover[data-disabled],
+.emotion-6[data-hover][data-disabled] {
+  background: initial;
+}
+
+.emotion-6:active,
+.emotion-6[data-active] {
+  background: rgba(144, 205, 244, 0.24);
 }
 
 .emotion-7 {
-  border-radius: 50%;
-  background: var(--chakra-colors-yellow-400);
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 6px;
-  top: 7px;
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  z-index: 2;
-}
-
-.emotion-8 {
   width: 24px;
   height: 24px;
   display: inline-block;
@@ -157,47 +190,28 @@ exports[`_app Should match snapshot. 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   color: currentColor;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: var(--chakra-colors-white);
-  position: absolute;
-  right: 8px;
-  top: 7px;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+}
+
+.emotion-8 {
   z-index: 1;
 }
 
 .emotion-9 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: var(--chakra-colors-white);
-  position: absolute;
-  left: 8px;
-  top: 7px;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-  z-index: 4;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background: var(--chakra-colors-gray-700);
+  box-shadow: var(--chakra-shadows-dark-lg);
+  color: inherit;
+  min-width: var(--chakra-sizes-3xs);
+  padding-top: var(--chakra-space-2);
+  padding-bottom: var(--chakra-space-2);
+  z-index: 1;
+  border-radius: var(--chakra-radii-md);
+  border-width: 1px;
+  -webkit-padding-start: var(--chakra-space-4);
+  padding-inline-start: var(--chakra-space-4);
+  -webkit-padding-end: var(--chakra-space-4);
+  padding-inline-end: var(--chakra-space-4);
 }
 
 .emotion-10 {
@@ -283,114 +297,6 @@ exports[`_app Should match snapshot. 1`] = `
   margin-inline-start: 0.5rem;
 }
 
-.emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: relative;
-  white-space: nowrap;
-  vertical-align: middle;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  line-height: 1.2;
-  border-radius: var(--chakra-radii-md);
-  font-weight: var(--chakra-fontWeights-semibold);
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-normal);
-  height: var(--chakra-sizes-8);
-  min-width: var(--chakra-sizes-8);
-  font-size: var(--chakra-fontSizes-sm);
-  -webkit-padding-start: var(--chakra-space-3);
-  padding-inline-start: var(--chakra-space-3);
-  -webkit-padding-end: var(--chakra-space-3);
-  padding-inline-end: var(--chakra-space-3);
-  color: var(--chakra-colors-blue-200);
-  background: var(--chakra-colors-transparent);
-  padding: 0px;
-}
-
-.emotion-15:focus-visible,
-.emotion-15[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-15[disabled],
-.emotion-15[aria-disabled=true],
-.emotion-15[data-disabled] {
-  opacity: 0.4;
-  cursor: not-allowed;
-  box-shadow: var(--chakra-shadows-none);
-}
-
-.emotion-15:hover,
-.emotion-15[data-hover] {
-  background: rgba(144, 205, 244, 0.12);
-}
-
-.emotion-15:hover[disabled],
-.emotion-15[data-hover][disabled],
-.emotion-15:hover[aria-disabled=true],
-.emotion-15[data-hover][aria-disabled=true],
-.emotion-15:hover[data-disabled],
-.emotion-15[data-hover][data-disabled] {
-  background: initial;
-}
-
-.emotion-15:active,
-.emotion-15[data-active] {
-  background: rgba(144, 205, 244, 0.24);
-}
-
-.emotion-16 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-}
-
-.emotion-17 {
-  z-index: 1;
-}
-
-.emotion-18 {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  background: var(--chakra-colors-gray-700);
-  box-shadow: var(--chakra-shadows-dark-lg);
-  color: inherit;
-  min-width: var(--chakra-sizes-3xs);
-  padding-top: var(--chakra-space-2);
-  padding-bottom: var(--chakra-space-2);
-  z-index: 1;
-  border-radius: var(--chakra-radii-md);
-  border-width: 1px;
-  -webkit-padding-start: var(--chakra-space-4);
-  padding-inline-start: var(--chakra-space-4);
-  -webkit-padding-end: var(--chakra-space-4);
-  padding-inline-end: var(--chakra-space-4);
-}
-
 <div>
   <div
     class="w-screen h-screen bg-slate-50 dark:bg-gray-900 emotion-0"
@@ -409,6 +315,7 @@ exports[`_app Should match snapshot. 1`] = `
           >
             <svg
               aria-labelledby="title"
+              class="NavLogo"
               height="48"
               role="presentation"
               viewBox="0 0 48 48"
@@ -439,7 +346,7 @@ exports[`_app Should match snapshot. 1`] = `
                 />
               </lineargradient>
               <circle
-                class="outterCircle"
+                class="NavLogo__outterCircle"
                 cx="24"
                 cy="24"
                 data-testid="NavLogo-outter-circle"
@@ -451,7 +358,7 @@ exports[`_app Should match snapshot. 1`] = `
                 stroke-width="1"
               />
               <circle
-                class="innerCircle"
+                class="NavLogo__innerCircle"
                 cx="24"
                 cy="24"
                 data-testid="NavLogo-inner-circle"
@@ -463,7 +370,7 @@ exports[`_app Should match snapshot. 1`] = `
                 stroke-width="1"
               />
               <text
-                class="text fadeIn-regular"
+                class="NavLogo__text fadeIn-regular"
                 data-testid="NavLogo-text"
                 fill="url(#gradient)"
                 x="14"
@@ -477,20 +384,71 @@ exports[`_app Should match snapshot. 1`] = `
         <div
           class="chakra-stack emotion-4"
         >
-          <button
-            aria-live="polite"
-            class="emotion-5"
+          <ul
+            class="NavLinks"
+            data-testid="NavLinks-desktop"
+          />
+          <div
+            class="FloatingMenu"
           >
             <div
-              class="emotion-6"
+              class="emotion-5"
+              data-testid="NavLinks-mobile"
+            >
+              <button
+                aria-controls="menu-list-:r1:"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                class="chakra-button chakra-menu__menu-button emotion-6"
+                data-testid="FloatingMenu-button"
+                id="menu-button-:r1:"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-icon emotion-7"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="emotion-8"
+                style="visibility: hidden; position: absolute; min-width: max-content; inset: 0 auto auto 0;"
+              >
+                <div
+                  aria-orientation="vertical"
+                  class="chakra-menu__menu-list emotion-9"
+                  id="menu-list-:r1:"
+                  role="menu"
+                  style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"
+                  tabindex="-1"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-live="polite"
+            class="ColorModeSwitcher ColorModeSwitcher--dark"
+          >
+            <div
+              class="ColorModeSwitcher__circle ColorModeSwitcher__circle-outter ColorModeSwitcher__circle-outter--dark"
             />
             <div
-              class="emotion-7"
+              class="ColorModeSwitcher__circle ColorModeSwitcher__circle-inner ColorModeSwitcher__circle-inner--dark"
             />
             <svg
-              class="chakra-icon chakra-icon stars emotion-8"
+              class="ColorModeSwitcher__icon ColorModeSwitcher__icon-stars ColorModeSwitcher__icon-stars--dark"
               fill="currentColor"
-              focusable="false"
               height="1em"
               stroke="currentColor"
               stroke-width="0"
@@ -503,9 +461,8 @@ exports[`_app Should match snapshot. 1`] = `
               />
             </svg>
             <svg
-              class="chakra-icon chakra-icon cloud emotion-9"
+              class="ColorModeSwitcher__icon ColorModeSwitcher__icon-clouds ColorModeSwitcher__icon-clouds--dark"
               fill="currentColor"
-              focusable="false"
               height="1em"
               stroke="currentColor"
               stroke-width="0"
@@ -547,21 +504,21 @@ exports[`_app Should match snapshot. 1`] = `
           class="chakra-stack emotion-13"
         >
           <div
-            class="emotion-14"
+            class="emotion-5"
             data-testid="LanguageSelector"
           >
             <button
-              aria-controls="menu-list-:r1:"
+              aria-controls="menu-list-:r3:"
               aria-expanded="false"
               aria-haspopup="menu"
-              class="chakra-button chakra-menu__menu-button emotion-15"
+              class="chakra-button chakra-menu__menu-button emotion-6"
               data-testid="FloatingMenu-button"
-              id="menu-button-:r1:"
+              id="menu-button-:r3:"
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="chakra-icon emotion-16"
+                class="chakra-icon emotion-7"
                 fill="currentColor"
                 focusable="false"
                 height="1em"
@@ -581,13 +538,13 @@ exports[`_app Should match snapshot. 1`] = `
               </svg>
             </button>
             <div
-              class="emotion-17"
+              class="emotion-8"
               style="visibility: hidden; position: absolute; min-width: max-content; inset: 0 auto auto 0;"
             >
               <div
                 aria-orientation="vertical"
-                class="chakra-menu__menu-list emotion-18"
-                id="menu-list-:r1:"
+                class="chakra-menu__menu-list emotion-9"
+                id="menu-list-:r3:"
                 role="menu"
                 style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"
                 tabindex="-1"

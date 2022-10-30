@@ -1,4 +1,4 @@
-import Hero from "@ui/Hero";
+import Hero from "@scenes/Home";
 import { render, screen } from "@utils/test-utils";
 
 describe("Hero.", () => {

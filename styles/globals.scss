@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Oswald";
+  font-display: swap;
+  src: url("../public/fonts/Oswald-Medium.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn-regular {
+  animation: fade-in 1.2s ease-in;
+}
+
+.fadeIn-slower {
+  animation: fade-in 2s ease-in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--chakra-fonts-heading);
+  font-weight: var(--chakra-fontWeights-bold);
+  line-height: var(--chakra-lineHeights-none);
+}

@@ -1,0 +1,19 @@
+.SkipLink {
+  padding: var(--chakra-space-1) var(--chakra-space-2);
+  width: fit-content;
+  background: var(--chakra-colors-teal-500);
+  font-size: var(--chakra-fontSizes-sm);
+  font-weight: var(--chakra-fontWeights-bold);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: var(--chakra-radii-sm);
+  transform: translateY(-250%);
+  transition: transform 0.3s;
+  z-index: var(--chakra-zIndeces-skipLink);
+
+  &:focus {
+    transform: translateY(10%);
+  }
+}

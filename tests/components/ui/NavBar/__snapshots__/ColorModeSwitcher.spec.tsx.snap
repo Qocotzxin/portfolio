@@ -1,116 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ColorModeSwitcher Should match snapshot. 1`] = `
-.emotion-0 {
-  width: 64px;
-  height: 32px;
-  background: var(--chakra-colors-blue-200);
-  border-radius: 18px;
-  position: relative;
-}
-
-.chakra-ui-dark .emotion-0:not([data-theme]),
-[data-theme=dark] .emotion-0:not([data-theme]),
-.emotion-0[data-theme=dark] {
-  border-color: var(--chakra-colors-gray-50);
-}
-
-.emotion-1 {
-  border-radius: 50%;
-  background: var(--chakra-colors-blue-200);
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 0px;
-  top: 7px;
-  z-index: 3;
-}
-
-.emotion-2 {
-  border-radius: 50%;
-  background: var(--chakra-colors-yellow-400);
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 6px;
-  top: 7px;
-  -webkit-transform: translateX(34px);
-  -moz-transform: translateX(34px);
-  -ms-transform: translateX(34px);
-  transform: translateX(34px);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  z-index: 2;
-}
-
-.emotion-3 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: var(--chakra-colors-white);
-  position: absolute;
-  right: 8px;
-  top: 7px;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  z-index: 1;
-}
-
-.emotion-4 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: var(--chakra-colors-white);
-  position: absolute;
-  left: 8px;
-  top: 7px;
-  opacity: 1;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-  z-index: 4;
-}
-
 <div>
   <button
     aria-label="Switch to light mode"
     aria-live="polite"
-    class="emotion-0"
+    class="ColorModeSwitcher "
   >
     <div
-      class="emotion-1"
+      class="ColorModeSwitcher__circle ColorModeSwitcher__circle-outter "
     />
     <div
-      class="emotion-2"
+      class="ColorModeSwitcher__circle ColorModeSwitcher__circle-inner "
     />
     <svg
-      class="chakra-icon chakra-icon stars emotion-3"
+      class="ColorModeSwitcher__icon ColorModeSwitcher__icon-stars "
       fill="currentColor"
-      focusable="false"
       height="1em"
       stroke="currentColor"
       stroke-width="0"
@@ -123,9 +28,8 @@ exports[`ColorModeSwitcher Should match snapshot. 1`] = `
       />
     </svg>
     <svg
-      class="chakra-icon chakra-icon cloud emotion-4"
+      class="ColorModeSwitcher__icon ColorModeSwitcher__icon-clouds "
       fill="currentColor"
-      focusable="false"
       height="1em"
       stroke="currentColor"
       stroke-width="0"

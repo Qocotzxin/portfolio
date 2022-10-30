@@ -1,5 +1,6 @@
+import { applyConditionalClass, concatClassNames } from "@utils/classnames";
 import { FC } from "react";
-import styles from "./NavLogo.module.css";
+import { Classes } from "./styles";
 
 interface NavLogoProps {
   withAnimation?: boolean;
@@ -14,6 +15,7 @@ const NavLogo: FC<NavLogoProps> = ({ withAnimation }) => {
       viewBox="0 0 48 48"
       aria-labelledby="title"
       role="presentation"
+      className={Classes.base}
     >
       <title id="title" lang="en">
         Logo
@@ -34,7 +36,7 @@ const NavLogo: FC<NavLogoProps> = ({ withAnimation }) => {
         cy="24"
         r="20"
         data-testid="NavLogo-outter-circle"
-        className={withAnimation ? styles.outterCircle : ""}
+        className={applyConditionalClass(!!withAnimation, Classes.outterCircle)}
         fill="none"
         stroke="#4FD1C5"
         strokeWidth="1"
@@ -46,7 +48,7 @@ const NavLogo: FC<NavLogoProps> = ({ withAnimation }) => {
         cy="24"
         r="16"
         data-testid="NavLogo-inner-circle"
-        className={withAnimation ? styles.innerCircle : ""}
+        className={applyConditionalClass(!!withAnimation, Classes.innerCircle)}
         fill="none"
         stroke="#4299E1"
         strokeWidth="1"
@@ -58,7 +60,10 @@ const NavLogo: FC<NavLogoProps> = ({ withAnimation }) => {
         y="32"
         fill="url(#gradient)"
         data-testid="NavLogo-text"
-        className={`${styles.text} ${withAnimation ? "fadeIn-regular" : ""}`}
+        className={concatClassNames(
+          Classes.text,
+          applyConditionalClass(!!withAnimation, "fadeIn-regular")
+        )}
       >
         CE
       </text>

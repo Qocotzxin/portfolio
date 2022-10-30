@@ -3,13 +3,12 @@
 exports[`Disk. Should match snapshot. 1`] = `
 <div>
   <svg
-    class="chakra-icon disk emotion-0"
-    focusable="false"
+    class="Disk"
     role="img"
     viewBox="0 0 210.18755 177.61084"
   >
     <g
-      class="innerBlur"
+      class="Disk__innerContainer"
       transform="translate(4.154307,-64.943708)"
     >
       <path

@@ -1,0 +1,93 @@
+.ColorModeSwitcher {
+  width: 64px;
+  height: 32px;
+  border-radius: 18px;
+  position: relative;
+  background: var(--chakra-colors-blue-200);
+
+  &--dark {
+    background: var(--chakra-colors-blue-700);
+    border-color: var(--chakra-colors-gray-50);
+  }
+
+  &__circle {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+
+    &-outter {
+      background: var(--chakra-colors-blue-200);
+      left: 0;
+      top: 7px;
+      z-index: 3;
+      &--dark {
+        background: var(--chakra-colors-blue-700);
+      }
+    }
+
+    &-inner {
+      background: var(--chakra-colors-yellow-400);
+      left: 6px;
+      top: 7px;
+      z-index: 2;
+      transform: translateX(34px);
+      transition: transform 0.5s;
+
+      &--dark {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__icon {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    color: white;
+
+    &-stars {
+      animation: rotation 15s infinite linear;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 1;
+
+      &--dark {
+        opacity: 1;
+      }
+    }
+
+    &-clouds {
+      fill: white;
+      opacity: 1;
+      transition: opacity 0.4s;
+      z-index: 4;
+      animation: float 3s infinite linear;
+      animation-direction: alternate;
+      left: 8px;
+      right: unset;
+
+      &--dark {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(8px);
+  }
+}

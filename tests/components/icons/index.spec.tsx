@@ -1,7 +1,5 @@
 import {
   Languages,
-  Clouds,
-  Stars,
   Hamburger,
   Github,
   LinkedIn,
@@ -14,8 +12,8 @@ describe("Icons.", () => {
   it("Should match snapshot.", () => {
     const { container } = render(
       <>
-        <Languages /> <Clouds /> <Stars /> <Hamburger /> <Github /> <LinkedIn />{" "}
-        <Flickr /> <DailyMotion />
+        <Languages /> <Hamburger /> <Github /> <LinkedIn /> <Flickr />{" "}
+        <DailyMotion />
       </>
     );
     expect(container).toMatchSnapshot();

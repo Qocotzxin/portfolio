@@ -1,7 +1,7 @@
 import { getHygraphData } from "@services/hygraphClient";
 import type { GetStaticPropsContext, NextPage } from "next";
 
-const About: NextPage = () => {
+const AboutPage: NextPage = () => {
   return <div data-testid="About">ABOUT</div>;
 };
 
@@ -13,4 +13,4 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
   };
 }
 
-export default About;
+export default AboutPage;
