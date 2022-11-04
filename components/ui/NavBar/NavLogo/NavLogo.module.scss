@@ -1,4 +1,6 @@
 .NavLogo {
+  cursor: pointer;
+
   &__outterCircle {
     animation: dash-forward 1s linear forwards;
   }

@@ -1,13 +1,13 @@
 import { useHygraphContext } from "@contexts/hygraphContext";
 import { useAriaLabel } from "@hooks/useAriaLabel";
-import { Hamburger } from "@icons";
 import { Components } from "@models/hygraph";
-import BaseLink from "@ui/BaseLink";
+import BaseLink from "@ui/Link";
 import FloatingMenu from "@ui/FloatingMenu";
 import { removeForwardSlash } from "@utils/url";
 import { useRouter } from "next/router";
 import { FC } from "react";
 import { Classes } from "./styles";
+import { BiMenu } from "react-icons/bi";
 
 const NavLinks: FC = () => {
   const router = useRouter();
@@ -28,8 +28,8 @@ const NavLinks: FC = () => {
       {/* Mobile */}
       <div className={Classes.floatingMenu}>
         <FloatingMenu
-          ariaLabel={ariaLabel?.content}
-          ButtonIcon={<Hamburger />}
+          aria-label={ariaLabel?.content}
+          icon={<BiMenu />}
           data-testid="NavLinks-mobile"
         >
           {navLinks?.map((link) => (

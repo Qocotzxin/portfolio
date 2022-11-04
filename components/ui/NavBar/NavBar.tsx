@@ -1,12 +1,16 @@
-import { Flex, HStack, Link } from "@chakra-ui/react";
+import { useIsDarkMode } from "@hooks/useIsDarkMode";
+import { applyConditionalClass, concatClassNames } from "@utils/classnames";
 import NextLink from "next/link";
 import { FC } from "react";
 import ColorModeSwitcher from "./ColorModeSwitcher";
 import NavLinks from "./NavLinks";
 import NavLogo from "./NavLogo";
 import SkipLink from "./SkipLink";
+import { Classes } from "./styles";
 
 const NavBar: FC = () => {
+  const isDark = useIsDarkMode();
+
   // TODO: analyze if hiding/showing nav based on scroll is required.
   // const [lastScrollTop, setLastScrollTop] = useState(0);
   // const [navPosition, setNavPosition] = useState<"relative" | "fixed">(
@@ -36,34 +40,27 @@ const NavBar: FC = () => {
   // }, []);
 
   return (
-    <Flex
-      as="nav"
-      w="100%"
-      h="16"
-      px="8"
-      bg="white"
-      _dark={{ bg: "gray.800" }}
-      justifyContent="space-between"
-      position="fixed"
-      // position={navPosition}
-      top="0"
-      left="0"
+    <nav
+      className={concatClassNames(
+        Classes.base,
+        applyConditionalClass(isDark, Classes.baseDark)
+      )}
     >
-      <HStack spacing={2}>
-        <NextLink href="/" passHref>
-          <Link>
+      <div className={Classes.block}>
+        <NextLink href="/" legacyBehavior>
+          <a>
             <NavLogo withAnimation />
-          </Link>
+          </a>
         </NextLink>
-      </HStack>
+      </div>
 
       <SkipLink />
 
-      <HStack spacing={4}>
+      <div className={concatClassNames(Classes.block, Classes.blockWide)}>
         <NavLinks />
         <ColorModeSwitcher />
-      </HStack>
-    </Flex>
+      </div>
+    </nav>
   );
 };
 

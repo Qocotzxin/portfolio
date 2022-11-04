@@ -1,31 +1,31 @@
-import { HStack, Link } from "@chakra-ui/react";
 import { useHygraphContext } from "@contexts/hygraphContext";
 import { ICON_MAP } from "@models/hygraph";
 import { FC } from "react";
+import { Classes } from "./styles";
 
 const FooterLinks: FC = () => {
   const { footerLinks } = useHygraphContext();
 
   return (
-    <HStack spacing={4} mr="4">
+    <div className={Classes.base}>
       {footerLinks?.map((link) => {
         const LinkIcon = ICON_MAP[link.icon];
         return (
           Boolean(LinkIcon) &&
           link.isActive && (
-            <Link
+            <a
+              target="_blank"
+              rel="noreferrer"
               key={link.url}
-              display="flex"
               href={link.url}
-              isExternal
               aria-label={link.ariaLabel}
             >
-              <LinkIcon _hover={{ color: "blue.400" }} />
-            </Link>
+              <LinkIcon className={Classes.icon} />
+            </a>
           )
         );
       })}
-    </HStack>
+    </div>
   );
 };
 

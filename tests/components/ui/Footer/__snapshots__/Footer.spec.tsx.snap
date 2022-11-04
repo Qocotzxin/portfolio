@@ -1,491 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer. Should match snapshot. 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  width: 100%;
-  height: var(--chakra-sizes-16);
-  -webkit-padding-start: var(--chakra-space-8);
-  padding-inline-start: var(--chakra-space-8);
-  -webkit-padding-end: var(--chakra-space-8);
-  padding-inline-end: var(--chakra-space-8);
-  background: var(--chakra-colors-white);
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-}
-
-.chakra-ui-dark .emotion-0:not([data-theme]),
-[data-theme=dark] .emotion-0:not([data-theme]),
-.emotion-0[data-theme=dark] {
-  background: var(--chakra-colors-gray-800);
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: var(--chakra-space-4);
-}
-
-.emotion-1>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: var(--chakra-space-4);
-  margin-inline-start: var(--chakra-space-4);
-}
-
-.emotion-2 {
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-fast);
-  transition-timing-function: var(--chakra-transition-easing-ease-out);
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  color: inherit;
-  font-family: var(--chakra-fonts-mono);
-  font-size: var(--chakra-fontSizes-xs);
-  font-weight: var(--chakra-fontWeights-bold);
-  -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
-  transition: text-shadow 0.2s linear,color 0.2s linear;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-2:hover,
-.emotion-2[data-hover] {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-2:focus-visible,
-.emotion-2[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-3 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-}
-
-.emotion-3:hover,
-.emotion-3[data-hover] {
-  color: var(--chakra-colors-blue-400);
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.emotion-4>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: 0.5rem;
-  margin-inline-start: 0.5rem;
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: relative;
-  white-space: nowrap;
-  vertical-align: middle;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  line-height: 1.2;
-  border-radius: var(--chakra-radii-md);
-  font-weight: var(--chakra-fontWeights-semibold);
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-normal);
-  height: var(--chakra-sizes-8);
-  min-width: var(--chakra-sizes-8);
-  font-size: var(--chakra-fontSizes-sm);
-  -webkit-padding-start: var(--chakra-space-3);
-  padding-inline-start: var(--chakra-space-3);
-  -webkit-padding-end: var(--chakra-space-3);
-  padding-inline-end: var(--chakra-space-3);
-  color: var(--chakra-colors-blue-200);
-  background: var(--chakra-colors-transparent);
-  padding: 0px;
-}
-
-.emotion-6:focus-visible,
-.emotion-6[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-6[disabled],
-.emotion-6[aria-disabled=true],
-.emotion-6[data-disabled] {
-  opacity: 0.4;
-  cursor: not-allowed;
-  box-shadow: var(--chakra-shadows-none);
-}
-
-.emotion-6:hover,
-.emotion-6[data-hover] {
-  background: rgba(144, 205, 244, 0.12);
-}
-
-.emotion-6:hover[disabled],
-.emotion-6[data-hover][disabled],
-.emotion-6:hover[aria-disabled=true],
-.emotion-6[data-hover][aria-disabled=true],
-.emotion-6:hover[data-disabled],
-.emotion-6[data-hover][data-disabled] {
-  background: initial;
-}
-
-.emotion-6:active,
-.emotion-6[data-active] {
-  background: rgba(144, 205, 244, 0.24);
-}
-
-.emotion-7 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-}
-
-.emotion-8 {
-  z-index: 1;
-}
-
-.emotion-9 {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  background: var(--chakra-colors-gray-700);
-  box-shadow: var(--chakra-shadows-dark-lg);
-  color: inherit;
-  min-width: var(--chakra-sizes-3xs);
-  padding-top: var(--chakra-space-2);
-  padding-bottom: var(--chakra-space-2);
-  z-index: 1;
-  border-radius: var(--chakra-radii-md);
-  border-width: 1px;
-  -webkit-padding-start: var(--chakra-space-4);
-  padding-inline-start: var(--chakra-space-4);
-  -webkit-padding-end: var(--chakra-space-4);
-  padding-inline-end: var(--chakra-space-4);
-}
-
-.emotion-10 {
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-fast);
-  transition-timing-function: var(--chakra-transition-easing-ease-out);
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  color: inherit;
-  font-family: var(--chakra-fonts-mono);
-  font-size: var(--chakra-fontSizes-xs);
-  font-weight: var(--chakra-fontWeights-bold);
-  -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
-  transition: text-shadow 0.2s linear,color 0.2s linear;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: start;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  padding-top: var(--chakra-space-1-5);
-  padding-bottom: var(--chakra-space-1-5);
-  -webkit-padding-start: var(--chakra-space-3);
-  padding-inline-start: var(--chakra-space-3);
-  -webkit-padding-end: var(--chakra-space-3);
-  padding-inline-end: var(--chakra-space-3);
-  transition-property: var(--chakra-transition-property-background);
-  transition-duration: var(--chakra-transition-duration-ultra-fast);
-  transition-timing-function: var(--chakra-transition-easing-ease-in);
-  -webkit-order: 0;
-  -ms-flex-order: 0;
-  order: 0;
-  text-transform: capitalize;
-}
-
-.emotion-10:hover,
-.emotion-10[data-hover] {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-10:hover::before,
-.emotion-10[data-hover]::before {
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.emotion-10:focus-visible,
-.emotion-10[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-10::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: calc(var(--chakra-space-1) * -1);
-  left: 0px;
-  background-color: var(--chakra-colors-gray-800);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-}
-
-.chakra-ui-dark .emotion-10:not([data-theme])::before,
-[data-theme=dark] .emotion-10:not([data-theme])::before,
-.emotion-10[data-theme=dark]::before {
-  background-color: var(--chakra-colors-gray-50);
-}
-
-.emotion-10:focus,
-.emotion-10[data-focus] {
-  background: var(--chakra-colors-whiteAlpha-100);
-}
-
-.emotion-10:active,
-.emotion-10[data-active] {
-  background: var(--chakra-colors-whiteAlpha-200);
-}
-
-.emotion-10[aria-expanded=true],
-.emotion-10[data-expanded] {
-  background: var(--chakra-colors-whiteAlpha-100);
-}
-
-.emotion-10[disabled],
-.emotion-10[aria-disabled=true],
-.emotion-10[data-disabled] {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
-.emotion-11 {
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-fast);
-  transition-timing-function: var(--chakra-transition-easing-ease-out);
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  color: inherit;
-  font-family: var(--chakra-fonts-mono);
-  font-size: var(--chakra-fontSizes-xs);
-  font-weight: var(--chakra-fontWeights-bold);
-  -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
-  transition: text-shadow 0.2s linear,color 0.2s linear;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: start;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  padding-top: var(--chakra-space-1-5);
-  padding-bottom: var(--chakra-space-1-5);
-  -webkit-padding-start: var(--chakra-space-3);
-  padding-inline-start: var(--chakra-space-3);
-  -webkit-padding-end: var(--chakra-space-3);
-  padding-inline-end: var(--chakra-space-3);
-  transition-property: var(--chakra-transition-property-background);
-  transition-duration: var(--chakra-transition-duration-ultra-fast);
-  transition-timing-function: var(--chakra-transition-easing-ease-in);
-  -webkit-order: 1;
-  -ms-flex-order: 1;
-  order: 1;
-  text-transform: capitalize;
-}
-
-.emotion-11:hover,
-.emotion-11[data-hover] {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-11:hover::before,
-.emotion-11[data-hover]::before {
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.emotion-11:focus-visible,
-.emotion-11[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-11::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: calc(var(--chakra-space-1) * -1);
-  left: 0px;
-  background-color: var(--chakra-colors-gray-800);
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-}
-
-.chakra-ui-dark .emotion-11:not([data-theme])::before,
-[data-theme=dark] .emotion-11:not([data-theme])::before,
-.emotion-11[data-theme=dark]::before {
-  background-color: var(--chakra-colors-gray-50);
-}
-
-.emotion-11:focus,
-.emotion-11[data-focus] {
-  background: var(--chakra-colors-whiteAlpha-100);
-}
-
-.emotion-11:active,
-.emotion-11[data-active] {
-  background: var(--chakra-colors-whiteAlpha-200);
-}
-
-.emotion-11[aria-expanded=true],
-.emotion-11[data-expanded] {
-  background: var(--chakra-colors-whiteAlpha-100);
-}
-
-.emotion-11[disabled],
-.emotion-11[aria-disabled=true],
-.emotion-11[data-disabled] {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
 <div>
   <div
-    class="emotion-0"
+    class="Footer Footer--dark"
   >
     <div
-      class="chakra-stack emotion-1"
+      class="FooterLinks"
     >
       <a
         aria-label="Visit Github"
-        class="chakra-link emotion-2"
         href="https://github.com"
-        rel="noopener"
+        rel="noreferrer"
         target="_blank"
       >
         <svg
-          class="chakra-icon emotion-3"
+          class="FooterLinks__icon"
           fill="currentColor"
-          focusable="false"
           height="1em"
           stroke="currentColor"
           stroke-width="0"
@@ -500,26 +31,19 @@ exports[`Footer. Should match snapshot. 1`] = `
       </a>
     </div>
     <div
-      class="chakra-stack emotion-4"
+      class="Footer__block"
     >
       <div
-        class="emotion-5"
-        data-testid="LanguageSelector"
+        class="FloatingMenu"
+        data-testid="FloatingMenu"
       >
         <button
-          aria-controls="menu-list-:r1:"
-          aria-expanded="false"
-          aria-haspopup="menu"
-          class="chakra-button chakra-menu__menu-button emotion-6"
-          data-testid="FloatingMenu-button"
-          id="menu-button-:r1:"
-          type="button"
+          class="Button Button--dark"
+          data-testid="LanguageSelector"
+          id="FloatingMenu-trigger"
         >
           <svg
-            aria-hidden="true"
-            class="chakra-icon emotion-7"
             fill="currentColor"
-            focusable="false"
             height="1em"
             stroke="currentColor"
             stroke-width="0"
@@ -537,40 +61,33 @@ exports[`Footer. Should match snapshot. 1`] = `
           </svg>
         </button>
         <div
-          class="emotion-8"
-          style="visibility: hidden; position: absolute; min-width: max-content; inset: 0 auto auto 0;"
+          aria-labelledby="FloatingMenu-trigger"
+          class="FloatingMenu__list  FloatingMenu__list--dark"
+          role="menu"
+          tabindex="-1"
         >
-          <div
-            aria-orientation="vertical"
-            class="chakra-menu__menu-list emotion-9"
-            id="menu-list-:r1:"
-            role="menu"
-            style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"
+          <a
+            aria-current="false"
+            class="Link Link--dark"
+            data-order="0"
+            href="/#main"
+            role="menuitem"
+            style="order: 0;"
             tabindex="-1"
           >
-            <a
-              aria-current="false"
-              class="chakra-link chakra-menu__menuitem emotion-10"
-              data-index="0"
-              href="/#main"
-              id="menu-list-:r1:-menuitem-:r2:"
-              role="menuitem"
-              tabindex="-1"
-            >
-              english
-            </a>
-            <a
-              aria-current="false"
-              class="chakra-link chakra-menu__menuitem emotion-11"
-              data-index="1"
-              href="/#main"
-              id="menu-list-:r1:-menuitem-:r3:"
-              role="menuitem"
-              tabindex="-1"
-            >
-              spanish
-            </a>
-          </div>
+            english
+          </a>
+          <a
+            aria-current="false"
+            class="Link Link--dark"
+            data-order="1"
+            href="/#main"
+            role="menuitem"
+            style="order: 1;"
+            tabindex="-1"
+          >
+            spanish
+          </a>
         </div>
       </div>
     </div>

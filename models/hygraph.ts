@@ -1,5 +1,5 @@
-import { DailyMotion, Flickr, Github, LinkedIn } from "@icons";
-
+import { FaFlickr, FaDailymotion } from "react-icons/fa";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 // Hydration type
 export interface HygraphModel {
   hygraphData: HygraphTree;
@@ -132,8 +132,8 @@ export enum Tooling {
 }
 
 export const ICON_MAP = {
-  github: Github,
-  linkedin: LinkedIn,
-  flickr: Flickr,
-  dailyMotion: DailyMotion,
+  github: AiFillGithub,
+  linkedin: AiFillLinkedin,
+  flickr: FaFlickr,
+  dailyMotion: FaDailymotion,
 };

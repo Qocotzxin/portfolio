@@ -1,316 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`_app Should match snapshot. 1`] = `
-.emotion-0 {
-  width: 100vw;
-  height: 100vh;
-}
-
-.emotion-1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  width: 100%;
-  height: var(--chakra-sizes-16);
-  -webkit-padding-start: var(--chakra-space-8);
-  padding-inline-start: var(--chakra-space-8);
-  -webkit-padding-end: var(--chakra-space-8);
-  padding-inline-end: var(--chakra-space-8);
-  background: var(--chakra-colors-white);
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
-
-.chakra-ui-dark .emotion-1:not([data-theme]),
-[data-theme=dark] .emotion-1:not([data-theme]),
-.emotion-1[data-theme=dark] {
-  background: var(--chakra-colors-gray-800);
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.emotion-2>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: var(--chakra-space-2);
-  margin-inline-start: var(--chakra-space-2);
-}
-
-.emotion-3 {
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-fast);
-  transition-timing-function: var(--chakra-transition-easing-ease-out);
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  color: inherit;
-  font-family: var(--chakra-fonts-mono);
-  font-size: var(--chakra-fontSizes-xs);
-  font-weight: var(--chakra-fontWeights-bold);
-  -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
-  transition: text-shadow 0.2s linear,color 0.2s linear;
-}
-
-.emotion-3:hover,
-.emotion-3[data-hover] {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-3:focus-visible,
-.emotion-3[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.emotion-4>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: var(--chakra-space-4);
-  margin-inline-start: var(--chakra-space-4);
-}
-
-.emotion-6 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: relative;
-  white-space: nowrap;
-  vertical-align: middle;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  line-height: 1.2;
-  border-radius: var(--chakra-radii-md);
-  font-weight: var(--chakra-fontWeights-semibold);
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-normal);
-  height: var(--chakra-sizes-8);
-  min-width: var(--chakra-sizes-8);
-  font-size: var(--chakra-fontSizes-sm);
-  -webkit-padding-start: var(--chakra-space-3);
-  padding-inline-start: var(--chakra-space-3);
-  -webkit-padding-end: var(--chakra-space-3);
-  padding-inline-end: var(--chakra-space-3);
-  color: var(--chakra-colors-blue-200);
-  background: var(--chakra-colors-transparent);
-  padding: 0px;
-}
-
-.emotion-6:focus-visible,
-.emotion-6[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-6[disabled],
-.emotion-6[aria-disabled=true],
-.emotion-6[data-disabled] {
-  opacity: 0.4;
-  cursor: not-allowed;
-  box-shadow: var(--chakra-shadows-none);
-}
-
-.emotion-6:hover,
-.emotion-6[data-hover] {
-  background: rgba(144, 205, 244, 0.12);
-}
-
-.emotion-6:hover[disabled],
-.emotion-6[data-hover][disabled],
-.emotion-6:hover[aria-disabled=true],
-.emotion-6[data-hover][aria-disabled=true],
-.emotion-6:hover[data-disabled],
-.emotion-6[data-hover][data-disabled] {
-  background: initial;
-}
-
-.emotion-6:active,
-.emotion-6[data-active] {
-  background: rgba(144, 205, 244, 0.24);
-}
-
-.emotion-7 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-}
-
-.emotion-8 {
-  z-index: 1;
-}
-
-.emotion-9 {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  background: var(--chakra-colors-gray-700);
-  box-shadow: var(--chakra-shadows-dark-lg);
-  color: inherit;
-  min-width: var(--chakra-sizes-3xs);
-  padding-top: var(--chakra-space-2);
-  padding-bottom: var(--chakra-space-2);
-  z-index: 1;
-  border-radius: var(--chakra-radii-md);
-  border-width: 1px;
-  -webkit-padding-start: var(--chakra-space-4);
-  padding-inline-start: var(--chakra-space-4);
-  -webkit-padding-end: var(--chakra-space-4);
-  padding-inline-end: var(--chakra-space-4);
-}
-
-.emotion-10 {
-  height: 100%;
-  position: relative;
-  z-index: -1;
-}
-
-.emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  width: 100%;
-  height: var(--chakra-sizes-16);
-  -webkit-padding-start: var(--chakra-space-8);
-  padding-inline-start: var(--chakra-space-8);
-  -webkit-padding-end: var(--chakra-space-8);
-  padding-inline-end: var(--chakra-space-8);
-  background: var(--chakra-colors-white);
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-}
-
-.chakra-ui-dark .emotion-11:not([data-theme]),
-[data-theme=dark] .emotion-11:not([data-theme]),
-.emotion-11[data-theme=dark] {
-  background: var(--chakra-colors-gray-800);
-}
-
-.emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: var(--chakra-space-4);
-}
-
-.emotion-12>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: var(--chakra-space-4);
-  margin-inline-start: var(--chakra-space-4);
-}
-
-.emotion-13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.emotion-13>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: 0.5rem;
-  margin-inline-start: 0.5rem;
-}
-
 <div>
   <div
-    class="w-screen h-screen bg-slate-50 dark:bg-gray-900 emotion-0"
+    class="Layout"
     data-testid="Layout"
   >
     <header>
       <nav
-        class="emotion-1"
+        class="NavBar NavBar--dark"
       >
         <div
-          class="chakra-stack emotion-2"
+          class="NavBar__block"
         >
           <a
-            class="chakra-link emotion-3"
             href="/"
           >
             <svg
@@ -382,7 +85,7 @@ exports[`_app Should match snapshot. 1`] = `
           </a>
         </div>
         <div
-          class="chakra-stack emotion-4"
+          class="NavBar__block NavBar__block--wide"
         >
           <ul
             class="NavLinks"
@@ -392,23 +95,16 @@ exports[`_app Should match snapshot. 1`] = `
             class="FloatingMenu"
           >
             <div
-              class="emotion-5"
-              data-testid="NavLinks-mobile"
+              class="FloatingMenu"
+              data-testid="FloatingMenu"
             >
               <button
-                aria-controls="menu-list-:r1:"
-                aria-expanded="false"
-                aria-haspopup="menu"
-                class="chakra-button chakra-menu__menu-button emotion-6"
-                data-testid="FloatingMenu-button"
-                id="menu-button-:r1:"
-                type="button"
+                class="Button Button--dark"
+                data-testid="NavLinks-mobile"
+                id="FloatingMenu-trigger"
               >
                 <svg
-                  aria-hidden="true"
-                  class="chakra-icon emotion-7"
                   fill="currentColor"
-                  focusable="false"
                   height="1em"
                   stroke="currentColor"
                   stroke-width="0"
@@ -422,18 +118,11 @@ exports[`_app Should match snapshot. 1`] = `
                 </svg>
               </button>
               <div
-                class="emotion-8"
-                style="visibility: hidden; position: absolute; min-width: max-content; inset: 0 auto auto 0;"
-              >
-                <div
-                  aria-orientation="vertical"
-                  class="chakra-menu__menu-list emotion-9"
-                  id="menu-list-:r1:"
-                  role="menu"
-                  style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"
-                  tabindex="-1"
-                />
-              </div>
+                aria-labelledby="FloatingMenu-trigger"
+                class="FloatingMenu__list  FloatingMenu__list--dark"
+                role="menu"
+                tabindex="-1"
+              />
             </div>
           </div>
           <button
@@ -482,11 +171,11 @@ exports[`_app Should match snapshot. 1`] = `
       </nav>
     </header>
     <main
-      class="emotion-10"
       id="main"
     >
       <div
-        style="padding-top: 4rem; padding-bottom: 4rem; height: 100%; opacity: 0; transform: translateX(200px) translateY(0px) translateZ(0);"
+        class="Layout__transitionWrapper"
+        style="opacity: 0; transform: translateX(200px) translateY(0px) translateZ(0);"
       >
         <div>
           Test component
@@ -495,32 +184,25 @@ exports[`_app Should match snapshot. 1`] = `
     </main>
     <footer>
       <div
-        class="emotion-11"
+        class="Footer Footer--dark"
       >
         <div
-          class="chakra-stack emotion-12"
+          class="FooterLinks"
         />
         <div
-          class="chakra-stack emotion-13"
+          class="Footer__block"
         >
           <div
-            class="emotion-5"
-            data-testid="LanguageSelector"
+            class="FloatingMenu"
+            data-testid="FloatingMenu"
           >
             <button
-              aria-controls="menu-list-:r3:"
-              aria-expanded="false"
-              aria-haspopup="menu"
-              class="chakra-button chakra-menu__menu-button emotion-6"
-              data-testid="FloatingMenu-button"
-              id="menu-button-:r3:"
-              type="button"
+              class="Button Button--dark"
+              data-testid="LanguageSelector"
+              id="FloatingMenu-trigger"
             >
               <svg
-                aria-hidden="true"
-                class="chakra-icon emotion-7"
                 fill="currentColor"
-                focusable="false"
                 height="1em"
                 stroke="currentColor"
                 stroke-width="0"
@@ -538,18 +220,11 @@ exports[`_app Should match snapshot. 1`] = `
               </svg>
             </button>
             <div
-              class="emotion-8"
-              style="visibility: hidden; position: absolute; min-width: max-content; inset: 0 auto auto 0;"
-            >
-              <div
-                aria-orientation="vertical"
-                class="chakra-menu__menu-list emotion-9"
-                id="menu-list-:r3:"
-                role="menu"
-                style="transform-origin: var(--popper-transform-origin); opacity: 0; visibility: hidden; transform: scale(0.8) translateZ(0);"
-                tabindex="-1"
-              />
-            </div>
+              aria-labelledby="FloatingMenu-trigger"
+              class="FloatingMenu__list  FloatingMenu__list--dark"
+              role="menu"
+              tabindex="-1"
+            />
           </div>
         </div>
       </div>

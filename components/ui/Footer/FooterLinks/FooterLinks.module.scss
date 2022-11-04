@@ -1,0 +1,19 @@
+.FooterLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--chakra-space-4);
+
+  & > * {
+    margin-right: var(--chakra-space-4);
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      color: var(--chakra-colors-blue-400);
+    }
+  }
+}

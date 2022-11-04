@@ -1,8 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
-import components from "./components";
 import config from "./config";
 import fonts from "./fonts";
 
-const theme = extendTheme({ config, fonts, components });
+const theme = extendTheme({ config, fonts });
 
 export default theme;

@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import { HygraphModel } from "@models/hygraph";
 import Footer from "@ui/Footer";
 import NavBar from "@ui/NavBar";
@@ -7,6 +6,7 @@ import Head from "next/head";
 import { FC, PropsWithChildren } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
+import { Classes } from "./styles";
 
 const variants = {
   hidden: { opacity: 0, x: 200, y: 0 },
@@ -21,12 +21,7 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
   const router = useRouter();
 
   return (
-    <Box
-      w="100vw"
-      h="100vh"
-      className="w-screen h-screen bg-slate-50 dark:bg-gray-900"
-      data-testid="Layout"
-    >
+    <div className={Classes.base} data-testid="Layout">
       <Head>
         <title>Cristian Etchebarne</title>
         <meta charSet="utf-8" />
@@ -41,15 +36,11 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
           <NavBar />
         </header>
 
-        <Box id="main" as="main" h="100%" position="relative" zIndex={-1}>
+        <main id="main">
           <AnimatePresence exitBeforeEnter>
             <motion.div
               key={router.route}
-              style={{
-                paddingTop: "4rem",
-                paddingBottom: "4rem",
-                height: "100%",
-              }}
+              className={Classes.transitionWrapper}
               initial="hidden"
               animate="enter"
               exit="exit"
@@ -59,13 +50,13 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
               {children}
             </motion.div>
           </AnimatePresence>
-        </Box>
+        </main>
 
         <footer>
           <Footer />
         </footer>
       </HygraphProvider>
-    </Box>
+    </div>
   );
 };
 

@@ -1,12 +1,12 @@
 import { useHygraphContext } from "@contexts/hygraphContext";
 import { useAriaLabel } from "@hooks/useAriaLabel";
-import { Languages } from "@icons";
 import { Components } from "@models/hygraph";
-import BaseLink from "@ui/BaseLink";
+import BaseLink from "@ui/Link";
 import FloatingMenu from "@ui/FloatingMenu";
 import { removeForwardSlash } from "@utils/url";
 import { useRouter } from "next/router";
 import { FC } from "react";
+import { MdLanguage } from "react-icons/md";
 
 const LanguageSelector: FC = () => {
   const { languages } = useHygraphContext();
@@ -18,8 +18,8 @@ const LanguageSelector: FC = () => {
 
   return (
     <FloatingMenu
-      ariaLabel={ariaLabel?.content}
-      ButtonIcon={<Languages />}
+      aria-label={ariaLabel?.content}
+      icon={<MdLanguage />}
       data-testid="LanguageSelector"
     >
       {languages

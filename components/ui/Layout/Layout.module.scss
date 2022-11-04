@@ -1,0 +1,16 @@
+.Layout {
+  width: 100vw;
+  height: 100vh;
+
+  main {
+    height: 100%;
+    position: relative;
+    z-index: -1;
+  }
+
+  &__transitionWrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: 100%;
+  }
+}

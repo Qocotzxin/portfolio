@@ -1,27 +1,25 @@
-import { Flex, HStack } from "@chakra-ui/react";
+import { useIsDarkMode } from "@hooks/useIsDarkMode";
 import FooterLinks from "@ui/Footer/FooterLinks";
 import LanguageSelector from "@ui/Footer/LanguageSelector";
+import { applyConditionalClass, concatClassNames } from "@utils/classnames";
 import { FC } from "react";
+import { Classes } from "./styles";
 
 const Footer: FC = () => {
+  const isDark = useIsDarkMode();
+
   return (
-    <Flex
-      w="100%"
-      h="16"
-      px="8"
-      bg="white"
-      _dark={{ bg: "gray.800" }}
-      alignItems="center"
-      justifyContent="space-between"
-      position="fixed"
-      bottom="0"
-      left="0"
+    <div
+      className={concatClassNames(
+        Classes.base,
+        applyConditionalClass(isDark, Classes.baseDark)
+      )}
     >
       <FooterLinks />
-      <HStack>
+      <div className={Classes.block}>
         <LanguageSelector />
-      </HStack>
-    </Flex>
+      </div>
+    </div>
   );
 };
 

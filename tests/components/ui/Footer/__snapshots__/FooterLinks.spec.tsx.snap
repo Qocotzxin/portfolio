@@ -1,93 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FooterLinks Should match snapshot. 1`] = `
-.emotion-0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: var(--chakra-space-4);
-}
-
-.emotion-0>*:not(style)~*:not(style) {
-  margin-top: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-start: var(--chakra-space-4);
-  margin-inline-start: var(--chakra-space-4);
-}
-
-.emotion-1 {
-  transition-property: var(--chakra-transition-property-common);
-  transition-duration: var(--chakra-transition-duration-fast);
-  transition-timing-function: var(--chakra-transition-easing-ease-out);
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  color: inherit;
-  font-family: var(--chakra-fonts-mono);
-  font-size: var(--chakra-fontSizes-xs);
-  font-weight: var(--chakra-fontWeights-bold);
-  -webkit-transition: text-shadow 0.2s linear,color 0.2s linear;
-  transition: text-shadow 0.2s linear,color 0.2s linear;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.emotion-1:hover,
-.emotion-1[data-hover] {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-1:focus-visible,
-.emotion-1[data-focus-visible] {
-  box-shadow: var(--chakra-shadows-outline);
-}
-
-.emotion-2 {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  line-height: 1em;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: currentColor;
-}
-
-.emotion-2:hover,
-.emotion-2[data-hover] {
-  color: var(--chakra-colors-blue-400);
-}
-
 <div>
   <div
-    class="chakra-stack emotion-0"
+    class="FooterLinks"
   >
     <a
       aria-label="Visit Github"
-      class="chakra-link emotion-1"
       href="https://github.com"
-      rel="noopener"
+      rel="noreferrer"
       target="_blank"
     >
       <svg
-        class="chakra-icon emotion-2"
+        class="FooterLinks__icon"
         fill="currentColor"
-        focusable="false"
         height="1em"
         stroke="currentColor"
         stroke-width="0"

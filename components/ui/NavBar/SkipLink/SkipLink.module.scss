@@ -12,6 +12,7 @@
   transform: translateY(-250%);
   transition: transform 0.3s;
   z-index: var(--chakra-zIndeces-skipLink);
+  color: white;
 
   &:focus {
     transform: translateY(10%);

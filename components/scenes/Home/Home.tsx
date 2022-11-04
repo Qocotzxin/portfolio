@@ -1,14 +1,13 @@
-import { useColorMode } from "@chakra-ui/react";
 import { useHygraphContext } from "@contexts/hygraphContext";
+import { useIsDarkMode } from "@hooks/useIsDarkMode";
 import { applyConditionalClass, concatClassNames } from "@utils/classnames";
 import { FC } from "react";
-import { ColorMode } from "types";
 import Disk from "../../ui/Disk";
 import { Classes } from "./styles";
 
 const Home: FC = () => {
   const { heroes } = useHygraphContext();
-  const { colorMode } = useColorMode();
+  const isDark = useIsDarkMode();
 
   if (!heroes || !heroes[0]) {
     return null;
@@ -22,20 +21,14 @@ const Home: FC = () => {
         className={concatClassNames(
           Classes.home,
           Classes.homeHero,
-          applyConditionalClass(
-            colorMode === ColorMode.dark,
-            Classes.homeHeroDark
-          )
+          applyConditionalClass(isDark, Classes.homeHeroDark)
         )}
         data-testid="Hero"
       >
         <div
           className={concatClassNames(
             Classes.homeHeroTitle,
-            applyConditionalClass(
-              colorMode === ColorMode.dark,
-              Classes.homeHeroTitleDark
-            )
+            applyConditionalClass(isDark, Classes.homeHeroTitleDark)
           )}
         >
           <h1>{title}</h1>

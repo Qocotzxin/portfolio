@@ -1,5 +1,5 @@
 import { Menu, MenuButton, MenuList } from "@chakra-ui/react";
-import BaseLink from "@ui/BaseLink";
+import BaseLink from "@ui/Link";
 import { fireEvent, render, screen } from "@utils/test-utils";
 
 const mockProps = {

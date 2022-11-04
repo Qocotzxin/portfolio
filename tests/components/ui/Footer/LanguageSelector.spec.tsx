@@ -5,9 +5,9 @@ describe("LanguageSelector.", () => {
   it("Should render inside a Floating menu every active language.", async () => {
     render(<LanguageSelector />);
 
-    fireEvent.click(screen.getByTestId("FloatingMenu-button"));
+    fireEvent.click(screen.getByTestId("FloatingMenu"));
 
-    expect(screen.getByTestId("LanguageSelector")).toBeInTheDocument();
+    expect(screen.getByTestId("FloatingMenu")).toBeInTheDocument();
     const menuItems = await screen.findAllByRole("menuitem");
     expect(menuItems.length).toBe(2);
   });
