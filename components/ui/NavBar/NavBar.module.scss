@@ -1,8 +1,10 @@
+@use "@styles/variables" as vars;
+
 .NavBar {
   width: 100%;
   height: 4rem;
-  padding-left: var(--chakra-space-8);
-  padding-right: var(--chakra-space-8);
+  padding-left: vars.$ce-space-8;
+  padding-right: vars.$ce-space-8;
   background: white;
   display: flex;
   justify-content: space-between;
@@ -11,7 +13,7 @@
   left: 0;
 
   &--dark {
-    background: var(--chakra-colors-gray-800);
+    background: vars.$ce-color-gray-800;
   }
 
   &__block {
@@ -20,12 +22,12 @@
     justify-content: center;
 
     & > * {
-      margin-right: var(--chakra-space-2);
+      margin-right: vars.$ce-space-2;
     }
 
     &--wide {
       & > * {
-        margin-right: var(--chakra-space-4);
+        margin-right: vars.$ce-space-4;
       }
     }
   }

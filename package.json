@@ -9,7 +9,8 @@
     "lint": "next lint",
     "test": "jest --watch",
     "coverage": "jest --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate-tokens": "style-dictionary build -c tokens/config.json"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.9",
@@ -43,6 +44,7 @@
     "node-mocks-http": "^1.11.0",
     "postcss": "^8.4.16",
     "sass": "^1.55.0",
+    "style-dictionary": "^3.7.1",
     "typescript": "4.7.4"
   }
 }

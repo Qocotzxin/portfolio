@@ -1,3 +1,5 @@
+@use "@styles/variables" as vars;
+
 .Home {
   height: 100%;
   display: flex;
@@ -6,12 +8,12 @@
   justify-content: center;
 
   &__hero {
-    background: var(--chakra-colors-gray-100);
+    background: vars.$ce-color-gray-100;
     width: 100%;
-    color: white;
+    color: vars.$ce-color-white;
     overflow: hidden;
     justify-content: space-between;
-    padding: var(--chakra-space-12);
+    padding: vars.$ce-space-12;
 
     @media only screen and (min-width: 48em) {
       height: 75%;
@@ -19,7 +21,7 @@
     }
 
     &--dark {
-      background: black;
+      background: vars.$ce-color-black;
     }
 
     &-title {
@@ -28,33 +30,33 @@
       z-index: 1;
 
       & > * {
-        margin-bottom: var(--chakra-space-2);
+        margin-bottom: vars.$ce-space-2;
       }
 
       h1,
       h2 {
-        font-size: var(--chakra-fontSizes-4xl);
+        font-size: vars.$ce-font-size-4xl;
         background-image: linear-gradient(
           to right,
-          var(--chakra-colors-teal-400),
-          var(--chakra-colors-yellow-300)
+          vars.$ce-color-teal-400,
+          vars.$ce-color-yellow-300
         );
         background-clip: text;
         -webkit-text-fill-color: transparent;
 
         @media only screen and (min-width: 62em) {
-          font-size: var(--chakra-fontSizes-7xl);
+          font-size: vars.$ce-font-size-7xl;
         }
 
         h1 {
-          padding-bottom: var(--chakra-space-1);
+          padding-bottom: vars.$ce-space-1;
         }
 
         &--dark h2 {
           background-image: linear-gradient(
             to left,
-            var(--chakra-colors-yellow-300),
-            var(--chakra-colors-teal-400)
+            vars.$ce-color-yellow-300,
+            vars.$ce-color-teal-400
           );
         }
       }

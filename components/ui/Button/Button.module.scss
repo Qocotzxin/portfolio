@@ -1,9 +1,11 @@
+@use "@styles/variables" as vars;
+
 .Button {
   width: fit-content;
-  padding: var(--chakra-space-1);
+  padding: vars.$ce-space-1;
   background: transparent;
-  color: var(--chakra-colors-blue-400);
-  border-radius: var(--chakra-radii-md);
+  color: vars.$ce-color-blue-400;
+  border-radius: vars.$ce-border-radius-md;
   transition: background 0.2s;
 
   &:hover {
@@ -11,7 +13,7 @@
   }
 
   &--dark {
-    color: var(--chakra-colors-blue-200);
+    color: vars.$ce-color-blue-200;
 
     &:hover {
       background: rgba(144, 205, 244, 0.1);

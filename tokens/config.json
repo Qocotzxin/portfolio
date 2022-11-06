@@ -1,0 +1,16 @@
+{
+  "source": ["tokens/data/*.json"],
+  "platforms": {
+    "scss": {
+      "prefix": "ce",
+      "transformGroup": "scss",
+      "buildPath": "styles/",
+      "files": [
+        {
+          "destination": "variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    }
+  }
+}

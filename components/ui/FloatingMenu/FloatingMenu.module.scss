@@ -1,3 +1,5 @@
+@use "@styles/variables" as vars;
+
 .FloatingMenu {
   position: relative;
   &__list {
@@ -6,24 +8,24 @@
     align-items: flex-start;
     justify-content: center;
     position: absolute;
-    background: var(--chakra-colors-chakra-body-bg);
+    background: --chakra-color-chakra-body-bg;
     bottom: 36px;
     right: 0;
     transform: scale(0, 0);
     transform-origin: bottom right;
     transition: transform 0.3s;
     min-width: 200px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: var(--chakra-radii-md);
-    padding: var(--chakra-space-2);
+    border: 1px solid vars.$ce-color-black-alpha-50;
+    border-radius: vars.$ce-border-radius-md;
+    padding: vars.$ce-space-2;
 
     & > * {
       width: 100%;
-      padding: var(--chakra-space-2);
+      padding: vars.$ce-space-2;
 
       &:hover,
       &:focus {
-        background: rgba(0, 0, 0, 0.1);
+        background: vars.$ce-color-black-alpha-50;
       }
     }
 
@@ -32,12 +34,12 @@
     }
 
     &--dark {
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid vars.$ce-color-white-alpha-50;
 
       & > * {
         &:hover,
         &:focus {
-          background: rgba(255, 255, 255, 0.1);
+          background: vars.$ce-color-white-alpha-50;
         }
       }
     }

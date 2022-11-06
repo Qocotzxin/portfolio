@@ -1,11 +1,13 @@
+@use "@styles/variables" as vars;
+
 .FooterLinks {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: var(--chakra-space-4);
+  margin-right: vars.$ce-space-4;
 
   & > * {
-    margin-right: var(--chakra-space-4);
+    margin-right: vars.$ce-space-4;
   }
 
   &__icon {
@@ -13,7 +15,7 @@
     height: 24px;
 
     &:hover {
-      color: var(--chakra-colors-blue-400);
+      color: vars.$ce-color-blue-400;
     }
   }
 }

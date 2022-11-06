@@ -1,17 +1,19 @@
+@use "@styles/variables" as vars;
+
 .SkipLink {
-  padding: var(--chakra-space-1) var(--chakra-space-2);
+  padding: vars.$ce-space-1 vars.$ce-space-2;
   width: fit-content;
-  background: var(--chakra-colors-teal-500);
-  font-size: var(--chakra-fontSizes-sm);
-  font-weight: var(--chakra-fontWeights-bold);
+  background: vars.$ce-color-teal-500;
+  font-size: vars.$ce-font-size-sm;
+  font-weight: vars.$ce-font-weight-bold;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  border-radius: var(--chakra-radii-sm);
+  border-radius: vars.$ce-border-radius-sm;
   transform: translateY(-250%);
   transition: transform 0.3s;
-  z-index: var(--chakra-zIndeces-skipLink);
+  z-index: vars.$ce-z-index-skip-link;
   color: white;
 
   &:focus {
