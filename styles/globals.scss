@@ -1,4 +1,72 @@
-@import "./variables";
+/**
+* CSS Reset (modified version) - taken from https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+// CSS Reset end.
 
 @font-face {
   font-family: "Oswald";
@@ -32,7 +100,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $ce-font-family-heading;
-  font-weight: $ce-font-weight-bold;
-  line-height: $ce-font-line-height-none;
+  font-family: var(--ce-font-family-heading);
+  font-weight: var(--ce-font-weight-bold);
+  line-height: var(--ce-font-line-height-none);
+}
+
+body {
+  background: var(--ce-body-bg);
+  color: var(--ce-body-text);
+  font-family: var(--ce-font-family-body);
 }

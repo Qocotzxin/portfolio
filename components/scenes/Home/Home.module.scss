@@ -1,5 +1,3 @@
-@use "@styles/variables" as vars;
-
 .Home {
   height: 100%;
   display: flex;
@@ -8,12 +6,12 @@
   justify-content: center;
 
   &__hero {
-    background: vars.$ce-color-gray-100;
+    background: var(--ce-color-gray-100);
     width: 100%;
-    color: vars.$ce-color-white;
+    color: var(--ce-color-white);
     overflow: hidden;
     justify-content: space-between;
-    padding: vars.$ce-space-12;
+    padding: var(--ce-space-12);
 
     @media only screen and (min-width: 48em) {
       height: 75%;
@@ -21,7 +19,7 @@
     }
 
     &--dark {
-      background: vars.$ce-color-black;
+      background: var(--ce-color-black);
     }
 
     &-title {
@@ -30,33 +28,33 @@
       z-index: 1;
 
       & > * {
-        margin-bottom: vars.$ce-space-2;
+        margin-bottom: var(--ce-space-2);
       }
 
       h1,
       h2 {
-        font-size: vars.$ce-font-size-4xl;
+        font-size: var(--ce-font-size-4xl);
         background-image: linear-gradient(
           to right,
-          vars.$ce-color-teal-400,
-          vars.$ce-color-yellow-300
+          var(--ce-color-teal-400),
+          var(--ce-color-yellow-300)
         );
         background-clip: text;
         -webkit-text-fill-color: transparent;
 
         @media only screen and (min-width: 62em) {
-          font-size: vars.$ce-font-size-7xl;
+          font-size: var(--ce-font-size-7xl);
         }
 
         h1 {
-          padding-bottom: vars.$ce-space-1;
+          padding-bottom: var(--ce-space-1);
         }
 
         &--dark h2 {
           background-image: linear-gradient(
             to left,
-            vars.$ce-color-yellow-300,
-            vars.$ce-color-teal-400
+            var(--ce-color-yellow-300),
+            var(--ce-color-teal-400)
           );
         }
       }

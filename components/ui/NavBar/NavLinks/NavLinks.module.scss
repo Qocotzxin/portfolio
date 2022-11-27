@@ -1,5 +1,3 @@
-@use "@styles/variables" as vars;
-
 .NavLinks {
   display: none;
   align-items: center;
@@ -11,8 +9,8 @@
   }
 
   li {
-    margin-right: vars.$ce-space-2;
-    margin-left: vars.$ce-space-2;
+    margin-right: var(--ce-space-2);
+    margin-left: var(--ce-space-2);
   }
 }
 

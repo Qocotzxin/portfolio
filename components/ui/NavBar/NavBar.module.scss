@@ -1,20 +1,14 @@
-@use "@styles/variables" as vars;
-
 .NavBar {
   width: 100%;
   height: 4rem;
-  padding-left: vars.$ce-space-8;
-  padding-right: vars.$ce-space-8;
-  background: white;
+  padding-left: var(--ce-space-8);
+  padding-right: var(--ce-space-8);
+  background: var(--ce-body-bg);
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-
-  &--dark {
-    background: vars.$ce-color-gray-800;
-  }
 
   &__block {
     display: flex;
@@ -22,12 +16,12 @@
     justify-content: center;
 
     & > * {
-      margin-right: vars.$ce-space-2;
+      margin-right: var(--ce-space-2);
     }
 
     &--wide {
       & > * {
-        margin-right: vars.$ce-space-4;
+        margin-right: var(--ce-space-4);
       }
     }
   }

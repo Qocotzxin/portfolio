@@ -1,32 +1,21 @@
-import { useColorMode } from "@chakra-ui/react";
+import { useThemeContext } from "@contexts/themeContext";
 import { useAriaLabel } from "@hooks/useAriaLabel";
+import { useIsDarkMode } from "@hooks/useIsDarkMode";
 import { Components } from "@models/hygraph";
 import { applyConditionalClass, concatClassNames } from "@utils/classnames";
-import { FC, useEffect, useMemo, useState } from "react";
+import { FC } from "react";
 import { BsFillCloudsFill, BsStars } from "react-icons/bs";
 import { ColorMode } from "types";
 import { Classes } from "./styles";
 
 const ColorModeSwitcher: FC = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const colorModeIsDark = useMemo(
-    () => colorMode === ColorMode.dark,
-    [colorMode]
-  );
+  const { toggleColorMode } = useThemeContext();
+  const isDark = useIsDarkMode();
+
   const ariaLabel = useAriaLabel({
     component: Components.ColorModeSwitcher,
-    metadata: colorModeIsDark ? ColorMode.light : ColorMode.dark,
+    metadata: isDark ? ColorMode.light : ColorMode.dark,
   });
-  const [isDark, setIsDark] = useState(colorModeIsDark);
-
-  useEffect(() => {
-    setIsDark(colorModeIsDark);
-  }, [colorModeIsDark]);
-
-  const onToggle = () => {
-    setIsDark((isDark) => !isDark);
-    setTimeout(toggleColorMode, 300);
-  };
 
   return (
     <button
@@ -34,7 +23,7 @@ const ColorModeSwitcher: FC = () => {
         Classes.base,
         applyConditionalClass(isDark, Classes.baseDark)
       )}
-      onClick={onToggle}
+      onClick={toggleColorMode}
       aria-label={ariaLabel?.content}
       aria-live="polite"
     >

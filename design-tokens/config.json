@@ -1,14 +1,14 @@
 {
   "source": ["tokens/data/*.json"],
   "platforms": {
-    "scss": {
+    "css": {
       "prefix": "ce",
-      "transformGroup": "scss",
+      "transformGroup": "css",
       "buildPath": "styles/",
       "files": [
         {
-          "destination": "variables.scss",
-          "format": "scss/variables"
+          "format": "css/variables",
+          "destination": "variables.css"
         }
       ]
     }

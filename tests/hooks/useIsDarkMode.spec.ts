@@ -1,16 +1,17 @@
 import { useIsDarkMode } from "@hooks/useIsDarkMode";
 import { AllTheProviders, renderHook } from "@utils/test-utils";
-import { useColorMode } from "@chakra-ui/react";
+import { useThemeContext } from "@contexts/themeContext";
+import { ColorMode } from "types";
 
-jest.mock("@chakra-ui/react", () => {
+jest.mock("@contexts/themeContext", () => {
   return {
-    ...jest.requireActual("@chakra-ui/react"),
-    useColorMode: jest.fn(() => ({ colorMode: "dark" })),
+    ...jest.requireActual("@contexts/themeContext"),
+    useThemeContext: jest.fn(() => ({ colorMode: "dark" })),
   };
 });
 
 describe("useIsDarkMode", () => {
-  it("Should return true if Chakra's colorMode is dark.", () => {
+  it("Should return true if colorMode is dark.", () => {
     const { result } = renderHook(() => useIsDarkMode(), {
       wrapper: AllTheProviders,
     });
@@ -18,11 +19,11 @@ describe("useIsDarkMode", () => {
     expect(result.current).toBe(true);
   });
 
-  it("Should return false if Chakra's colorMode is light.", () => {
+  it("Should return false if colorMode is light.", () => {
     (
-      useColorMode as jest.MockedFunction<typeof useColorMode>
+      useThemeContext as jest.MockedFunction<typeof useThemeContext>
     ).mockImplementation(() => ({
-      colorMode: "light",
+      colorMode: ColorMode.light,
       toggleColorMode: jest.fn(),
       setColorMode: jest.fn(),
     }));

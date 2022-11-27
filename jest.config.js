@@ -46,7 +46,6 @@ const customJestConfig = {
     "^@pages/(.*)$": "<rootDir>/pages/$1",
   },
   errorOnDeprecated: true,
-  snapshotSerializers: ["@emotion/jest/serializer"],
   testEnvironment: "jsdom",
 };
 

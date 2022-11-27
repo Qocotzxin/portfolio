@@ -6,6 +6,8 @@
       "mono": { "value": "monospace" }
     },
     "size": {
+      "3xs": { "value": "0.375rem" },
+      "2xs": { "value": "0.5rem" },
       "xs": { "value": "0.75rem" },
       "sm": { "value": "0.875rem" },
       "md": { "value": "1rem" },

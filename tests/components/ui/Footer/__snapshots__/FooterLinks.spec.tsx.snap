@@ -27,9 +27,5 @@ exports[`FooterLinks Should match snapshot. 1`] = `
       </svg>
     </a>
   </div>
-  <span
-    hidden=""
-    id="__chakra_env"
-  />
 </div>
 `;

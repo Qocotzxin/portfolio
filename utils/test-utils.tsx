@@ -1,9 +1,8 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { render, RenderOptions } from "@testing-library/react";
-import { FC, PropsWithChildren, ReactElement } from "react";
-import theme from "@theme";
-import { HygraphProvider } from "contexts/hygraphContext";
+import { ThemeProvider } from "@contexts/themeContext";
 import { Components, HygraphData } from "@models/hygraph";
+import { render, RenderOptions } from "@testing-library/react";
+import { HygraphProvider } from "contexts/hygraphContext";
+import { FC, PropsWithChildren, ReactElement } from "react";
 
 export const hygraphMockData: Partial<HygraphData> = {
   skipLinks: [
@@ -68,9 +67,9 @@ export const AllTheProviders: FC<PropsWithChildren & AllTheProvidersProps> = ({
   hygraphData = hygraphMockData,
 }) => {
   return (
-    <ChakraProvider theme={theme}>
+    <ThemeProvider>
       <HygraphProvider hygraphData={hygraphData}>{children}</HygraphProvider>
-    </ChakraProvider>
+    </ThemeProvider>
   );
 };
 

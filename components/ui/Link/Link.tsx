@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { FC } from "react";
 import { Classes } from "./styles";
 
-interface BaseLinkProps {
+interface LinkProps {
   activeRoute: string;
   link: NavLink;
   isMenuItem?: boolean;
@@ -13,7 +13,7 @@ interface BaseLinkProps {
   isCurrentLocale?: boolean;
 }
 
-const BaseLink: FC<BaseLinkProps> = ({
+const Link: FC<LinkProps> = ({
   activeRoute,
   link,
   isMenuItem,
@@ -49,4 +49,4 @@ const BaseLink: FC<BaseLinkProps> = ({
   );
 };
 
-export default BaseLink;
+export default Link;

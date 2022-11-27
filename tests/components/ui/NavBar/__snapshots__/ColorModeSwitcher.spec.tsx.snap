@@ -3,7 +3,6 @@
 exports[`ColorModeSwitcher Should match snapshot. 1`] = `
 <div>
   <button
-    aria-label="Switch to light mode"
     aria-live="polite"
     class="ColorModeSwitcher "
   >
@@ -45,9 +44,5 @@ exports[`ColorModeSwitcher Should match snapshot. 1`] = `
       />
     </svg>
   </button>
-  <span
-    hidden=""
-    id="__chakra_env"
-  />
 </div>
 `;

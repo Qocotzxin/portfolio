@@ -7,6 +7,7 @@ import { FC, PropsWithChildren } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { Classes } from "./styles";
+import { ThemeProvider } from "@contexts/themeContext";
 
 const variants = {
   hidden: { opacity: 0, x: 200, y: 0 },
@@ -32,29 +33,31 @@ const Layout: FC<PropsWithChildren & HygraphModel> = ({
       </Head>
 
       <HygraphProvider hygraphData={hygraphData}>
-        <header>
-          <NavBar />
-        </header>
+        <ThemeProvider>
+          <header>
+            <NavBar />
+          </header>
 
-        <main id="main">
-          <AnimatePresence exitBeforeEnter>
-            <motion.div
-              key={router.route}
-              className={Classes.transitionWrapper}
-              initial="hidden"
-              animate="enter"
-              exit="exit"
-              variants={variants}
-              transition={{ type: "linear" }}
-            >
-              {children}
-            </motion.div>
-          </AnimatePresence>
-        </main>
+          <main id="main">
+            <AnimatePresence exitBeforeEnter>
+              <motion.div
+                key={router.route}
+                className={Classes.transitionWrapper}
+                initial="hidden"
+                animate="enter"
+                exit="exit"
+                variants={variants}
+                transition={{ type: "linear" }}
+              >
+                {children}
+              </motion.div>
+            </AnimatePresence>
+          </main>
 
-        <footer>
-          <Footer />
-        </footer>
+          <footer>
+            <Footer />
+          </footer>
+        </ThemeProvider>
       </HygraphProvider>
     </div>
   );

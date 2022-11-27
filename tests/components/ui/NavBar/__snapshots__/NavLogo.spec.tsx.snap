@@ -68,9 +68,5 @@ exports[`NavLogo Should match snapshot. 1`] = `
       CE
     </text>
   </svg>
-  <span
-    hidden=""
-    id="__chakra_env"
-  />
 </div>
 `;

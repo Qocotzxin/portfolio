@@ -11,11 +11,6 @@ exports[`_document Should match snapshot. 1`] = `
     </div>
     <body>
       <div>
-        <span>
-          ColorModeScript
-        </span>
-      </div>
-      <div>
         Main
       </div>
       <div>

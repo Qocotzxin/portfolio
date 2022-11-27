@@ -1,7 +1,7 @@
 import { useHygraphContext } from "@contexts/hygraphContext";
 import { useAriaLabel } from "@hooks/useAriaLabel";
 import { Components } from "@models/hygraph";
-import BaseLink from "@ui/Link";
+import Link from "@ui/Link";
 import FloatingMenu from "@ui/FloatingMenu";
 import { removeForwardSlash } from "@utils/url";
 import { useRouter } from "next/router";
@@ -25,7 +25,7 @@ const LanguageSelector: FC = () => {
       {languages
         ?.filter((l) => l.isActive)
         .map((l, index) => (
-          <BaseLink
+          <Link
             key={l.code}
             isMenuItem
             activeRoute={currentPath}

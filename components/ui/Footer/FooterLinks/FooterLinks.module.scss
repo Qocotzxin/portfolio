@@ -1,21 +1,20 @@
-@use "@styles/variables" as vars;
-
 .FooterLinks {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: vars.$ce-space-4;
+  margin-right: var(--ce-space-4);
 
   & > * {
-    margin-right: vars.$ce-space-4;
+    margin-right: var(--ce-space-4);
   }
 
   &__icon {
     width: 24px;
     height: 24px;
+    transition: color 0.2s;
 
     &:hover {
-      color: vars.$ce-color-blue-400;
+      color: var(--ce-color-blue-400);
     }
   }
 }

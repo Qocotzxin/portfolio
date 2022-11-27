@@ -9,9 +9,5 @@ exports[`SkipLink Should render the skip link as long as the skipLinks array is 
   >
     Skip to content
   </a>
-  <span
-    hidden=""
-    id="__chakra_env"
-  />
 </div>
 `;

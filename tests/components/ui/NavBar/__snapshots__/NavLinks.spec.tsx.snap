@@ -9,7 +9,7 @@ exports[`NavLinks Should match snapshot. 1`] = `
     <li>
       <a
         aria-current="false"
-        class="Link Link--dark"
+        class="Link "
         data-order="1"
         href="/test"
         style="order: 1;"
@@ -26,7 +26,7 @@ exports[`NavLinks Should match snapshot. 1`] = `
       data-testid="FloatingMenu"
     >
       <button
-        class="Button Button--dark"
+        class="Button "
         data-testid="NavLinks-mobile"
         id="FloatingMenu-trigger"
       >
@@ -46,13 +46,13 @@ exports[`NavLinks Should match snapshot. 1`] = `
       </button>
       <div
         aria-labelledby="FloatingMenu-trigger"
-        class="FloatingMenu__list  FloatingMenu__list--dark"
+        class="FloatingMenu__list  "
         role="menu"
         tabindex="-1"
       >
         <a
           aria-current="false"
-          class="Link Link--dark"
+          class="Link "
           data-order="1"
           href="/test"
           role="menuitem"
@@ -64,9 +64,5 @@ exports[`NavLinks Should match snapshot. 1`] = `
       </div>
     </div>
   </div>
-  <span
-    hidden=""
-    id="__chakra_env"
-  />
 </div>
 `;

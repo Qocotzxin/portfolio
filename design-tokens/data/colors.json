@@ -1,5 +1,7 @@
 {
   "color": {
+    "body-light-bg": { "value": "#FFFFFF" },
+    "body-dark-bg": { "value": "{color.gray.800}" },
     "white": { "value": "#FFFFFF" },
     "black": { "value": "#000000" },
     "blackAlpha": {

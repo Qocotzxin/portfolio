@@ -1,14 +1,12 @@
-@use "@styles/variables" as vars;
-
 .Disk {
   width: 100%;
   height: 100%;
   will-change: transform, filter;
-  font-family: monospace;
-  font-size: vars.$ce-font-size-xs;
+  font-family: var(--ce-font-family-mono);
+  font-size: var(--ce-font-size-xl);
   align-self: center;
   animation: change-light 5s linear infinite alternate,
-    rotate 8s linear infinite;
+    rotate 30s linear infinite;
 
   @media only screen and (min-width: 48em) {
     align-self: baseline;
@@ -41,10 +39,10 @@
 
 @keyframes change-light {
   from {
-    filter: brightness(0.8) drop-shadow(4px 4px 24px vars.$ce-color-teal-400);
+    filter: brightness(0.8) drop-shadow(4px 4px 24px var(--ce-color-teal-400));
   }
 
   to {
-    filter: brightness(1.2) drop-shadow(4px 4px 24px vars.$ce-color-blue-300);
+    filter: brightness(1.2) drop-shadow(4px 4px 24px var(--ce-color-blue-300));
   }
 }

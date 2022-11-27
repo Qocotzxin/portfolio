@@ -1,15 +1,13 @@
-@use "@styles/variables" as vars;
-
 .ColorModeSwitcher {
   width: 64px;
   height: 32px;
   border-radius: 18px;
   position: relative;
-  background: vars.$ce-color-blue-200;
+  background: var(--ce-color-blue-200);
 
   &--dark {
-    background: vars.$ce-color-blue-700;
-    border-color: vars.$ce-color-gray-50;
+    background: var(--ce-color-blue-700);
+    border-color: var(--ce-color-gray-50);
   }
 
   &__circle {
@@ -19,17 +17,17 @@
     position: absolute;
 
     &-outter {
-      background: vars.$ce-color-blue-200;
+      background: var(--ce-color-blue-200);
       left: 0;
       top: 7px;
       z-index: 3;
       &--dark {
-        background: vars.$ce-color-blue-700;
+        background: var(--ce-color-blue-700);
       }
     }
 
     &-inner {
-      background: vars.$ce-color-yellow-400;
+      background: var(--ce-color-yellow-400);
       left: 6px;
       top: 7px;
       z-index: 2;
@@ -48,7 +46,7 @@
     position: absolute;
     right: 8px;
     top: 7px;
-    color: vars.$ce-color-white;
+    color: var(--ce-color-white);
 
     &-stars {
       animation: rotation 15s infinite linear;
@@ -62,7 +60,7 @@
     }
 
     &-clouds {
-      fill: vars.$ce-color-white;
+      fill: var(--ce-color-white);
       opacity: 1;
       transition: opacity 0.4s;
       z-index: 4;

@@ -1,11 +1,10 @@
-@use "@styles/variables" as vars;
-
 .Link {
   position: relative;
   font-family: monospace;
-  font-size: vars.$ce-font-size-xs;
+  font-size: var(--ce-font-size-xs);
   font-weight: bold;
   transition: text-shadow 0.2s linear, color 0.2s linear;
+  color: var(--ce-color-text);
 
   &:hover {
     text-decoration: none;
@@ -24,32 +23,28 @@
     height: 0;
     bottom: -4px;
     left: 0;
-    background: vars.$ce-color-gray-800;
+    background: var(--ce-color-gray-800);
     transform: scaleX(0);
     transition: transform 0.3s ease, height 0.1s;
   }
 
   &--dark {
     &::before {
-      background: vars.$ce-color-gray-50;
+      background: var(--ce-color-gray-50);
     }
   }
 
   &[aria-current="true"] {
-    color: vars.$ce-color-blue-600;
-    text-shadow: 0 0 12px vars.$ce-color-blue-100,
-      0 0 12px vars.$ce-color-blue-100, 0px 0 12px vars.$ce-color-teal-300,
-      0px 0 12px vars.$ce-color-teal-300;
-
-    // &::before {
-    //   background: vars.$ce-color-blue-600;
-    // }
+    color: var(--ce-color-blue-600);
+    text-shadow: 0 0 12px var(--ce-color-blue-100),
+      0 0 12px var(--ce-color-blue-100), 0px 0 12px var(--ce-color-teal-300),
+      0px 0 12px var(--ce-color-teal-300);
 
     &.Link--dark {
       color: white !important;
-      text-shadow: 0 0 12px vars.$ce-color-teal-100,
-        0 0 12px vars.$ce-color-teal-100, 0px 0 12px vars.$ce-color-blue-300,
-        0px 0 12px vars.$ce-color-blue-300;
+      text-shadow: 0 0 12px var(--ce-color-teal-100),
+        0 0 12px var(--ce-color-teal-100), 0px 0 12px var(--ce-color-blue-300),
+        0px 0 12px var(--ce-color-blue-300);
     }
   }
 }

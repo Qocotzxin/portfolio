@@ -1,8 +1,14 @@
-import { useColorMode } from "@chakra-ui/react";
+import { useThemeContext } from "@contexts/themeContext";
+import { useEffect, useState } from "react";
 import { ColorMode } from "types";
 
 export function useIsDarkMode() {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useThemeContext();
+  const [isDark, setIsDark] = useState(false);
 
-  return colorMode === ColorMode.dark;
+  useEffect(() => {
+    setIsDark(colorMode === ColorMode.dark);
+  }, [colorMode]);
+
+  return isDark;
 }

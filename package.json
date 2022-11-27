@@ -10,12 +10,9 @@
     "test": "jest --watch",
     "coverage": "jest --coverage",
     "prepare": "husky install",
-    "generate-tokens": "style-dictionary build -c tokens/config.json"
+    "generate-tokens": "style-dictionary build -c design-tokens/config.json"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.2.9",
-    "@emotion/react": "^11",
-    "@emotion/styled": "^11",
     "framer-motion": "^6",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
@@ -26,7 +23,6 @@
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
-    "@emotion/jest": "^11.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@types/lodash": "^4.14.184",

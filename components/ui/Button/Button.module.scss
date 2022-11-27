@@ -1,19 +1,17 @@
-@use "@styles/variables" as vars;
-
 .Button {
   width: fit-content;
-  padding: vars.$ce-space-1;
+  padding: var(--ce-space-1);
   background: transparent;
-  color: vars.$ce-color-blue-400;
-  border-radius: vars.$ce-border-radius-md;
-  transition: background 0.2s;
+  color: var(--ce-color-blue-400);
+  border-radius: var(--ce-border-radius-md);
+  transition: background 0.3s;
 
   &:hover {
     background: rgba(66, 153, 225, 0.1);
   }
 
   &--dark {
-    color: vars.$ce-color-blue-200;
+    color: var(--ce-color-blue-200);
 
     &:hover {
       background: rgba(144, 205, 244, 0.1);

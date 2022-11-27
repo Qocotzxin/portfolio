@@ -1,19 +1,17 @@
-@use "@styles/variables" as vars;
-
 .SkipLink {
-  padding: vars.$ce-space-1 vars.$ce-space-2;
+  padding: var(--ce-space-1) var(--ce-space-2);
   width: fit-content;
-  background: vars.$ce-color-teal-500;
-  font-size: vars.$ce-font-size-sm;
-  font-weight: vars.$ce-font-weight-bold;
+  background: var(--ce-color-teal-500);
+  font-size: var(--ce-font-size-sm);
+  font-weight: var(--ce-font-weight-bold);
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  border-radius: vars.$ce-border-radius-sm;
+  border-radius: var(--ce-border-radius-sm);
   transform: translateY(-250%);
   transition: transform 0.3s;
-  z-index: vars.$ce-z-index-skip-link;
+  z-index: var(--ce-z-index-skip-link);
   color: white;
 
   &:focus {

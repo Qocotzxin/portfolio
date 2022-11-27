@@ -1,7 +1,7 @@
 import { useHygraphContext } from "@contexts/hygraphContext";
 import { useAriaLabel } from "@hooks/useAriaLabel";
 import { Components } from "@models/hygraph";
-import BaseLink from "@ui/Link";
+import Link from "@ui/Link";
 import FloatingMenu from "@ui/FloatingMenu";
 import { removeForwardSlash } from "@utils/url";
 import { useRouter } from "next/router";
@@ -21,7 +21,7 @@ const NavLinks: FC = () => {
       <ul data-testid="NavLinks-desktop" className={Classes.navLinks}>
         {navLinks?.map((link) => (
           <li key={link.url}>
-            <BaseLink activeRoute={currentPath} link={link} />
+            <Link activeRoute={currentPath} link={link} />
           </li>
         ))}
       </ul>
@@ -33,7 +33,7 @@ const NavLinks: FC = () => {
           data-testid="NavLinks-mobile"
         >
           {navLinks?.map((link) => (
-            <BaseLink
+            <Link
               key={link.url}
               isMenuItem
               activeRoute={currentPath}
