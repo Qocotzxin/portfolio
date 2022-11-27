@@ -7,7 +7,7 @@
     justify-content: center;
     position: absolute;
     background: var(--ce-body-bg);
-    bottom: 36px;
+    bottom: 40px;
     right: 0;
     transform: scale(0, 0);
     transform-origin: bottom right;
@@ -29,6 +29,11 @@
 
     &--visible {
       transform: scale(1, 1);
+    }
+
+    &--bottom {
+      bottom: unset;
+      top: 40px;
     }
 
     &--dark {

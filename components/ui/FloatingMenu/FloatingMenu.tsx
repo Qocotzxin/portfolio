@@ -23,10 +23,16 @@ enum MenuActionKeys {
 
 interface FloatingMenuProps {
   icon: JSX.Element;
+  position?: "top" | "bottom";
 }
+
+/**
+ * This component functionality is based on MDN a11y recommendations for menus
+ * https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/menu_role
+ */
 const FloatingMenu: FC<
   PropsWithChildren<FloatingMenuProps & ComponentPropsWithoutRef<"button">>
-> = ({ icon, children, ...buttonProps }) => {
+> = ({ icon, position = "top", children, ...buttonProps }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuItems, setMenuItems] = useState<
     NodeListOf<HTMLAnchorElement | HTMLButtonElement> | undefined
@@ -96,7 +102,8 @@ const FloatingMenu: FC<
         className={concatClassNames(
           Classes.list,
           applyConditionalClass(isOpen, Classes.listVisible),
-          applyConditionalClass(isDark, Classes.listDark)
+          applyConditionalClass(isDark, Classes.listDark),
+          applyConditionalClass(position === "bottom", Classes.listBottom)
         )}
         onClick={closeMenu}
         role="menu"

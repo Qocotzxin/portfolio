@@ -7,6 +7,11 @@ export const hygraphClient = new GraphQLClient(process.env.HYGRAPH_API!, {
   },
 });
 
+/**
+ * This function retrieves every piece of content and it's being called for each page.
+ * TODO: parametrize it to call only what's needed on each page in order
+ * to decrease build time.
+ */
 export async function getHygraphData(locale = "en") {
   return await hygraphClient.request<HygraphData>(gql`{
     ariaLabels(locales: ${locale}) {
@@ -14,7 +19,7 @@ export async function getHygraphData(locale = "en") {
       content
       metadata
     }
-    navLinks(locales: ${locale}) {
+    navLinks(locales: ${locale}, where: {isActive: true}, orderBy: order_ASC) {
       text
       url
       order

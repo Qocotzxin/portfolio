@@ -12,6 +12,7 @@
     width: 24px;
     height: 24px;
     transition: color 0.2s;
+    color: var(--ce-body-text);
 
     &:hover {
       color: var(--ce-color-blue-400);

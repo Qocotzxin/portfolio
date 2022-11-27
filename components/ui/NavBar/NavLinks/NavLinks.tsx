@@ -31,6 +31,7 @@ const NavLinks: FC = () => {
           aria-label={ariaLabel?.content}
           icon={<BiMenu />}
           data-testid="NavLinks-mobile"
+          position="bottom"
         >
           {navLinks?.map((link) => (
             <Link

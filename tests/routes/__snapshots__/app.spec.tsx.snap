@@ -119,7 +119,7 @@ exports[`_app Should match snapshot. 1`] = `
               </button>
               <div
                 aria-labelledby="FloatingMenu-trigger"
-                class="FloatingMenu__list  "
+                class="FloatingMenu__list   FloatingMenu__list--bottom"
                 role="menu"
                 tabindex="-1"
               />
@@ -221,7 +221,7 @@ exports[`_app Should match snapshot. 1`] = `
             </button>
             <div
               aria-labelledby="FloatingMenu-trigger"
-              class="FloatingMenu__list  "
+              class="FloatingMenu__list   "
               role="menu"
               tabindex="-1"
             />
